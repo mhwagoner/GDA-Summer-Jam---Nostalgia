@@ -252,6 +252,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Left Button
       objectReference: {fileID: 0}
+    - target: {fileID: 3240526995839285812, guid: e2445cf2baff76a45943f27228d9de18, type: 3}
+      propertyPath: action.m_Name
+      value: Action
+      objectReference: {fileID: 0}
     - target: {fileID: 5248918405847178269, guid: e2445cf2baff76a45943f27228d9de18, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.15244989
