@@ -1,0 +1,55 @@
+{
+    "version": 1,
+    "name": "MachineInputs",
+    "maps": [
+        {
+            "name": "Buttons",
+            "id": "c6f8b7d7-e84a-4cba-ae26-161eb0fb1244",
+            "actions": [
+                {
+                    "name": "Group0",
+                    "type": "Button",
+                    "id": "1777bc94-db73-4319-a7a0-e93f9bc261f0",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Group1",
+                    "type": "Button",
+                    "id": "e72cc849-78a3-4c18-86e4-95cde518ab3f",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "9dfa0693-be8e-4657-96e9-0fb8bdc28e3e",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Group0",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fbeea985-d8c2-4834-a1e0-e7e4e6ecc412",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Group1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
