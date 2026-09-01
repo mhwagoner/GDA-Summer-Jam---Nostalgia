@@ -19,7 +19,9 @@ public class Machine : MonoBehaviour
                 Object obj = Instantiate(_protoObject);
                 obj.machine = this;
                 float position = size.x * i / iterations - size.x / 2 + obj.GetComponent<SpriteRenderer>().bounds.size.x / 2;
-                obj.transform.localPosition = new Vector2(position, 0); 
+                obj.transform.localPosition = new Vector2(position, 0);
+
+                obj.Body.linearVelocity = new Vector2(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f)).normalized * Random.Range(-1.0f, 1.0f);
             } 
         }
     }
