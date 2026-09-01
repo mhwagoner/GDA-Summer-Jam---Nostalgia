@@ -371,7 +371,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -75}
-  m_SizeDelta: {x: 1518.6315, y: 538.7952}
+  m_SizeDelta: {x: 1859.9, y: 538.7952}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &403525030
 MonoBehaviour:
@@ -887,8 +887,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Cole Elder - Design, \nAlina Stasi - Design, SFX,\nSheldon Criss - Music,
-    \nQuincy Hurst - Programming, \nMichael Wagoner - Design, "
+  m_text: 'Cole Elder - Design, UI
+
+    Alina Stasi - Design, SFX, UI
+
+    Sheldon
+    Criss - Music, Design
+
+    Quincy Hurst - Programming, Design
+
+    Michael Wagoner
+    - Design, UI, Programming'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 923f8eb31eae8ac49bc26a565758fa82, type: 2}
   m_sharedMaterial: {fileID: 8108455344987495160, guid: 923f8eb31eae8ac49bc26a565758fa82, type: 2}
