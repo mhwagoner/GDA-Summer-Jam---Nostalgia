@@ -3,6 +3,10 @@ using UnityEngine;
 public class WaterJet : MonoBehaviour
 {
     public Vector2 force;
+
+    [SerializeField]
+    private float _torqueDampener = 0.3f;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -30,6 +34,8 @@ public class WaterJet : MonoBehaviour
         GetAngleBounds(xMin, xMax, out float lowAngle, out float highAngle);
 
         obj.body.AddForce(GetForceVector(lowAngle, highAngle));
+
+        obj.body.AddTorque(GetTorque(radius, lowAngle, highAngle));
     }
 
     private void GetAngleBounds(float xMin, float xMax, out float lowAngle, out float highAngle)
@@ -51,13 +57,13 @@ public class WaterJet : MonoBehaviour
         {
             highAngle = Mathf.Deg2Rad * 90.0f;
         }
-
     }
 
     private Vector2 GetForceVector(float lowAngle, float highAngle)
     {
         float ResX(float angle)
         {
+            // You have to negate this field for some reason, I don't know why
             return -(force.x * 0.5f * (angle - Mathf.Sin(angle) * Mathf.Cos(angle))) - (force.y * 0.5f * Mathf.Sin(angle) * Mathf.Sin(angle));
         }
         float ResY(float angle)
@@ -65,5 +71,15 @@ public class WaterJet : MonoBehaviour
             return (force.x * 0.5f * Mathf.Sin(angle) * Mathf.Sin(angle)) + (force.y * 0.5f * (angle + Mathf.Sin(angle) * Mathf.Cos(angle)));
         }
         return new Vector2(ResX(highAngle) - ResX(lowAngle), ResY(highAngle) - ResY(lowAngle));
+    }
+
+    private float GetTorque(float radius, float lowAngle, float highAngle)
+    {
+        float Result(float angle)
+        {
+            return -force.y * Mathf.Cos(angle) - force.x * Mathf.Sin(angle);
+        }
+
+        return _torqueDampener * radius * (Result(highAngle) - Result(lowAngle));
     }
 }
