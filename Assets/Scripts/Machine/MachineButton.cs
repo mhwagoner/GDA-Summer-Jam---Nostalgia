@@ -1,39 +1,54 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class MachineButton : MonoBehaviour
 {
-    private bool _isHeld = false;
+    public event Action<bool> OnChange;
+    [HideInInspector]
+    public bool isHeld = false;
+    public InputActionAsset actionMap;
+    public string actionName;
+
+    private InputAction _action;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if (actionMap == null)
+        {
+            throw new Exception("MachineButton was not provided an actionMap");
+        }
 
+        _action = actionMap.FindAction(actionName);
+        if (_action == null)
+        {
+            Debug.Log($"Action \"{actionName}\" not found!");
+            gameObject.SetActive(false);
+        }
+        else
+        {
+            _action.Enable();
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (_isHeld)
+        if (_action.IsPressed())
         {
-            DoButtonAction();
+            if (!isHeld)
+            {
+                isHeld = true;
+                OnChange?.Invoke(true);
+            }
         }
-    }
-
-    public void OnPressed(InputAction.CallbackContext context)
-    {
-        if (context.started)
+        else
         {
-            _isHeld = true;
-            DoButtonAction();
+            if (isHeld)
+            {
+                isHeld = false;
+                OnChange?.Invoke(false);
+            }
         }
-        else if (context.canceled)
-        {
-            _isHeld = false;
-        }
-    }
-
-    virtual public void DoButtonAction()
-    {
-        Debug.Log("Hi!");
     }
 }
