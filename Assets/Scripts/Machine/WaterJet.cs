@@ -26,16 +26,20 @@ public class WaterJet : MonoBehaviour
         Object obj = comp as Object;
         float leftBound = GetComponent<BoxCollider2D>().bounds.min.x;
         float rightBound = GetComponent<BoxCollider2D>().bounds.max.x;
-        // The object's collider is always a circle collider
-        float radius = (collision as CircleCollider2D).radius;
-        float xMin = (leftBound - collision.bounds.center.x) / radius;
-        float xMax = (rightBound - collision.bounds.center.x) / radius;
 
-        GetAngleBounds(xMin, xMax, out float lowAngle, out float highAngle);
+        if (collision.GetType() == typeof(CircleCollider2D))
+        {
+            CircleCollider2D circle = collision as CircleCollider2D;
+            float radius = circle.radius * circle.transform.localScale.x;
+            float xMin = (leftBound - circle.bounds.center.x) / radius;
+            float xMax = (rightBound - circle.bounds.center.x) / radius;
 
-        obj.body.AddForce(GetForceVector(lowAngle, highAngle));
+            GetAngleBounds(xMin, xMax, out float lowAngle, out float highAngle);
 
-        obj.body.AddTorque(GetTorque(radius, lowAngle, highAngle));
+            obj.body.AddForce(GetForceVector(lowAngle, highAngle));
+
+            obj.body.AddTorque(GetTorque(radius, lowAngle, highAngle));
+        }
     }
 
     private void GetAngleBounds(float xMin, float xMax, out float lowAngle, out float highAngle)
