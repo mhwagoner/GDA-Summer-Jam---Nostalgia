@@ -16,7 +16,7 @@ public class WaterJet : MonoBehaviour
     {
         if (button != null)
         {
-            button.onChange += (bool status) => { _colliderActive = status; } ;
+            button.OnChange += SetJetStatus;
         }
     }
 
@@ -24,6 +24,12 @@ public class WaterJet : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void SetJetStatus(bool status)
+    {
+        _colliderActive = status;
+        // TODO: toggle visual
     }
 
     private void OnTriggerStay2D(Collider2D collision)
