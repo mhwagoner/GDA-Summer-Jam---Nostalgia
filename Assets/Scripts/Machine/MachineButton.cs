@@ -1,9 +1,12 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+[RequireComponent(typeof(PlayerInput))]
 public class MachineButton : MonoBehaviour
 {
-    private bool _isHeld = false;
+    public event Action<bool> onChange;
+    public bool isHeld = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,7 +16,7 @@ public class MachineButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_isHeld)
+        if (isHeld)
         {
             DoButtonAction();
         }
@@ -23,17 +26,19 @@ public class MachineButton : MonoBehaviour
     {
         if (context.started)
         {
-            _isHeld = true;
+            isHeld = true;
             DoButtonAction();
+            onChange?.Invoke(true);
         }
         else if (context.canceled)
         {
-            _isHeld = false;
+            isHeld = false;
+            onChange?.Invoke(false);
         }
     }
 
     virtual public void DoButtonAction()
     {
-        Debug.Log("Hi!");
+
     }
 }

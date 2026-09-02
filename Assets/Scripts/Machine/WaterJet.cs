@@ -7,10 +7,17 @@ public class WaterJet : MonoBehaviour
     [SerializeField]
     private float _torqueDampener = 0.3f;
 
+    public MachineButton button;
+
+    private bool _colliderActive = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        if (button != null)
+        {
+            button.onChange += (bool status) => { _colliderActive = status; } ;
+        }
     }
 
     // Update is called once per frame
@@ -21,11 +28,13 @@ public class WaterJet : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
+        if (!_colliderActive) return;
         if (!collision.TryGetComponent(typeof(Object), out Component comp)) return;
+        BoxCollider2D box = GetComponent<BoxCollider2D>();
 
         Object obj = comp as Object;
-        float leftBound = GetComponent<BoxCollider2D>().bounds.min.x;
-        float rightBound = GetComponent<BoxCollider2D>().bounds.max.x;
+        float leftBound = box.bounds.min.x;
+        float rightBound = box.bounds.max.x;
 
         if (collision.GetType() == typeof(CircleCollider2D))
         {
