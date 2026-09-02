@@ -11,6 +11,7 @@ public class Machine : MonoBehaviour
     {
 
         size = GetComponent<SpriteRenderer>().bounds.size;
+        /*
         const int iterations = 6;
         if (_protoObject != null)
         {
@@ -24,6 +25,7 @@ public class Machine : MonoBehaviour
                 obj.Body.linearVelocity = new Vector2(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f)).normalized * Random.Range(-1.0f, 1.0f);
             } 
         }
+        */
     }
 
     // Update is called once per frame
