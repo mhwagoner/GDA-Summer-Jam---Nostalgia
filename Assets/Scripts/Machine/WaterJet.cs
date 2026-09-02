@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class WaterJet : MonoBehaviour
@@ -10,6 +11,8 @@ public class WaterJet : MonoBehaviour
     public MachineButton button;
 
     private bool _colliderActive = false;
+
+    public bool doAccurateJet = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -39,6 +42,24 @@ public class WaterJet : MonoBehaviour
         BoxCollider2D box = GetComponent<BoxCollider2D>();
 
         Object obj = comp as Object;
+        if (doAccurateJet)
+        {
+            DoAccurateJet(collision, obj, box);
+        }
+        else
+        {
+            DoJet(obj);
+        }
+    }
+
+    private void DoJet(Object obj)
+    {
+        Vector2 _force = Quaternion.Euler(transform.eulerAngles) * force;
+        obj.body.AddForce(_force);
+    }
+
+    private void DoAccurateJet(Collider2D collision, Object obj, BoxCollider2D box)
+    {
         float leftBound = box.bounds.min.x;
         float rightBound = box.bounds.max.x;
 
@@ -55,6 +76,7 @@ public class WaterJet : MonoBehaviour
 
             obj.body.AddTorque(GetTorque(radius, lowAngle, highAngle));
         }
+
     }
 
     private void GetAngleBounds(float xMin, float xMax, out float lowAngle, out float highAngle)
