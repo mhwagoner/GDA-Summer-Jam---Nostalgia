@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class WaterJet : MonoBehaviour
@@ -14,6 +13,8 @@ public class WaterJet : MonoBehaviour
 
     public bool doAccurateJet = false;
 
+    public ParticleSystem particles;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,6 +22,8 @@ public class WaterJet : MonoBehaviour
         {
             button.OnChange += SetJetStatus;
         }
+
+        if (particles != null) particles.Stop();
     }
 
     // Update is called once per frame
@@ -32,7 +35,12 @@ public class WaterJet : MonoBehaviour
     private void SetJetStatus(bool status)
     {
         colliderActive = status;
-        // TODO: toggle visual
+
+        if (particles != null)
+        {
+            if (colliderActive) particles.Play();
+            else particles.Stop();
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
