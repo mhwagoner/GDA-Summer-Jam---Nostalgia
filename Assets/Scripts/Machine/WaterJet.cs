@@ -23,7 +23,7 @@ public class WaterJet : MonoBehaviour
             button.OnChange += SetJetStatus;
         }
 
-        if (particles != null) particles.Stop();
+        SetJetStatus(colliderActive);
     }
 
     // Update is called once per frame
