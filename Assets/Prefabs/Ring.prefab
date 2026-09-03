@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 6481524538372280632}
   - component: {fileID: -1200172250810318778}
   - component: {fileID: 719046515645887986}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ring
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,7 +189,7 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 192
+    m_Bits: 448
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 55
@@ -224,8 +224,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19d0e42e71ca12d4794191bbdbd89cd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Object
-  _terminalVelocity: 2
+  _terminalVelocity: 8
   body: {fileID: 0}
+  scoreCooldown: 10
+  hasScored: 0
 --- !u!1 &8396524854835676329
 GameObject:
   m_ObjectHideFlags: 0

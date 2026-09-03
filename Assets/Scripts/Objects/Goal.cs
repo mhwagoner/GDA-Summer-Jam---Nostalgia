@@ -17,6 +17,19 @@ public class Goal : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        EventBus.Instance.OnScoreEarned(points);
+        if (!collision.TryGetComponent(out Object obj)) return;
+        if (!obj.hasScored)
+        {
+            EventBus.Instance.OnScoreEarned(points);
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (!collision.TryGetComponent(out Object obj)) return;
+        // Only start the scoring cooldown once leaving the collider
+        if (!obj.hasScored)
+        {
+            obj.hasScored = true;
+        }
     }
 }

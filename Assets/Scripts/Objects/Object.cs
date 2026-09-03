@@ -10,6 +10,10 @@ public class Object : MonoBehaviour
     [HideInInspector]
     public Rigidbody2D body;
 
+    private float _timeSinceLastScore = 0.0f;
+    public float scoreCooldown;
+    public bool hasScored = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,6 +22,24 @@ public class Object : MonoBehaviour
 
     private void FixedUpdate()
     {
-        body.AddForce(-_terminalVelocity * body.linearVelocity.magnitude * body.linearVelocity);
+        if (body.linearVelocity.magnitude > _terminalVelocity)
+        {
+            body.linearVelocity = body.linearVelocity.normalized * _terminalVelocity;
+        }
+
+        if (hasScored)
+        {
+            UpdateScoreCooldown();
+        }
+    }
+
+    private void UpdateScoreCooldown()
+    {
+        _timeSinceLastScore += Time.fixedDeltaTime;
+        if (_timeSinceLastScore >= scoreCooldown)
+        {
+            hasScored = false;
+            _timeSinceLastScore = 0.0f;
+        }
     }
 }

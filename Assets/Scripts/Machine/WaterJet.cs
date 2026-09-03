@@ -10,7 +10,7 @@ public class WaterJet : MonoBehaviour
 
     public MachineButton button;
 
-    private bool _colliderActive = false;
+    public bool colliderActive = false;
 
     public bool doAccurateJet = false;
 
@@ -31,17 +31,16 @@ public class WaterJet : MonoBehaviour
 
     private void SetJetStatus(bool status)
     {
-        _colliderActive = status;
+        colliderActive = status;
         // TODO: toggle visual
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (!_colliderActive) return;
-        if (!collision.TryGetComponent(typeof(Object), out Component comp)) return;
+        if (!colliderActive) return;
+        if (!collision.TryGetComponent(out Object obj)) return;
         BoxCollider2D box = GetComponent<BoxCollider2D>();
 
-        Object obj = comp as Object;
         if (doAccurateJet)
         {
             DoAccurateJet(collision, obj, box);

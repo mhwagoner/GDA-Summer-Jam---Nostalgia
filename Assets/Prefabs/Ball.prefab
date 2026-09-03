@@ -112,6 +112,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Object
   _terminalVelocity: 2
   body: {fileID: 0}
+  scoreCooldown: 10
+  hasScored: 0
 --- !u!1 &9038219791808813725
 GameObject:
   m_ObjectHideFlags: 0
