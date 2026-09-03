@@ -13,8 +13,6 @@ public class HUDController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if(gameObject.name == "HUD"){ScoreManager.Instance.HUDController = this;}
-
         if(!isOpen){isOpen = true; ToggleOpen();}
     }
 
@@ -27,7 +25,12 @@ public class HUDController : MonoBehaviour
     public void ToggleOpen()
     {
         isOpen = !isOpen;
+        this.gameObject.SetActive(isOpen);
+    }
 
+    public void ToggleOpen(bool toOpen)
+    {
+        isOpen = toOpen;
         this.gameObject.SetActive(isOpen);
     }
 }
