@@ -3,8 +3,9 @@ using UnityEngine;
 public class Level : MonoBehaviour
 {
     public float levelTime = 60f;
-    public float score = 0f;
+    public int score = 0;
     public float mult = 1f;
+    public const float multToAdd = 0.1f;
     public bool isPaused = false;
     public bool levelActive = false;
     public bool isRainbowTime = false;
@@ -29,6 +30,7 @@ public class Level : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        EventBus.Instance.onScoreEarned += ChangeScore;
         StartLevel();
     }
 
@@ -62,7 +64,7 @@ public class Level : MonoBehaviour
         }
     }
 
-    public void ChangeScore(float scoreToAdd, float multToAdd)
+    private void ChangeScore(int scoreToAdd)
     {
         if(!levelActive){return;}
 
@@ -70,7 +72,8 @@ public class Level : MonoBehaviour
         if(scoreToAdd < 0){GetComponent<AudioSource>().PlayOneShot(loseScoreSFX, 0.7f);}
         
         score += scoreToAdd;
-        if(isRainbowTime){mult += multToAdd * 2;}
+        
+        if(isRainbowTime){mult += multToAdd * 3;}
         else{mult += multToAdd;}
     }
 

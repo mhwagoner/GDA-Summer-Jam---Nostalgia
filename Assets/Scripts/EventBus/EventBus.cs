@@ -18,11 +18,11 @@ public class EventBus
 
     }
 
-    private event Action<int> _onScoreEarned;
+    public event Action<int> onScoreEarned;
 
     public void OnScoreEarned(int points)
     {
-        _onScoreEarned?.Invoke(points);
+        onScoreEarned?.Invoke(points);
         UnityEngine.Debug.Log($"Earned {points} points");
     }
 }
