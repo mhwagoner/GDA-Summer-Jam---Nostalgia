@@ -80,7 +80,7 @@ public class Level : MonoBehaviour
     private void UpdateHUD()
     {
         //timer
-        HUDController.timeLabel.text = "Time: " + (int)levelTime;
+        HUDController.timeLabel.text = "" + (int)levelTime;
 
         //score
         HUDController.scoreLabel.text = "Score: " + score;

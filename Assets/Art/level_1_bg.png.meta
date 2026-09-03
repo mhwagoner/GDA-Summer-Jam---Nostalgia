@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0e885efcd83e2954898a4f1b30c7fa14
+guid: aac7bde5f1d31e64086dd40349dca993
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3244692601598691510
-    second: RedTank_0
+      213: 8421513857202827604
+    second: level_1_bg_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RedTank_0
+      name: level_1_bg_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 11
-        width: 811
-        height: 711
+        x: 0
+        y: 0
+        width: 480
+        height: 270
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6b8c0a3eab6770d20800000000000000
-      internalID: 3244692601598691510
+      spriteID: 451ba99eb3a3fd470800000000000000
+      internalID: 8421513857202827604
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      RedTank_0: 3244692601598691510
+      level_1_bg_0: 8421513857202827604
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

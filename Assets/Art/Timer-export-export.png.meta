@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0e885efcd83e2954898a4f1b30c7fa14
+guid: 21e431d832fc8d843bfba30985961192
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3244692601598691510
-    second: RedTank_0
+      213: -1262754924722718347
+    second: Timer-export-export_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RedTank_0
+      name: Timer-export-export_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 11
-        width: 811
-        height: 711
+        x: 4
+        y: 3
+        width: 114
+        height: 125
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6b8c0a3eab6770d20800000000000000
-      internalID: 3244692601598691510
+      spriteID: 579f689161bc97ee0800000000000000
+      internalID: -1262754924722718347
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      RedTank_0: 3244692601598691510
+      Timer-export-export_0: -1262754924722718347
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
