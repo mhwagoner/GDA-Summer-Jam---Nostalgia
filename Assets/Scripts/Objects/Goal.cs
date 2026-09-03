@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Pole : MonoBehaviour
+public class Goal : MonoBehaviour
 {
     public int points;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
