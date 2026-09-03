@@ -3,7 +3,6 @@ using UnityEngine.InputSystem;
 
 public class Machine : MonoBehaviour
 {
-    public Vector2 size;
     public float rotationSpeed;
 
     public InputActionAsset actionMap;
@@ -31,7 +30,6 @@ public class Machine : MonoBehaviour
         {
             _rotateR.Enable();
         }
-        size = GetComponent<SpriteRenderer>().bounds.size;
     }
 
     // Update is called once per frame
@@ -41,14 +39,16 @@ public class Machine : MonoBehaviour
         {
             if (_rotateL.IsPressed())
             {
-                transform.Rotate(0.0f, 0.0f, rotationSpeed * Time.deltaTime);
+                float rotateAmount = rotationSpeed * Time.deltaTime;
+                transform.Rotate(0.0f, 0.0f, rotateAmount);
             }
         } 
         if (_rotateR != null)
         {
             if (_rotateR.IsPressed())
             {
-                transform.Rotate(0.0f, 0.0f, -rotationSpeed * Time.deltaTime);
+                float rotateAmount = -rotationSpeed * Time.deltaTime;
+                transform.Rotate(0.0f, 0.0f, rotateAmount);
             }
         }
     }

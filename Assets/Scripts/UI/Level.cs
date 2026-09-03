@@ -30,7 +30,7 @@ public class Level : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        EventBus.Instance.onScoreEarned += ChangeScore;
+        EventBus.Instance.OnScoreEarned += ChangeScore;
         StartLevel();
     }
 

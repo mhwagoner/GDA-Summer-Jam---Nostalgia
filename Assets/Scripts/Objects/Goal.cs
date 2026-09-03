@@ -20,7 +20,7 @@ public class Goal : MonoBehaviour
         if (!collision.TryGetComponent(out Object obj)) return;
         if (!obj.hasScored)
         {
-            EventBus.Instance.OnScoreEarned(points);
+            EventBus.Instance.ScoreEarned(points);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
