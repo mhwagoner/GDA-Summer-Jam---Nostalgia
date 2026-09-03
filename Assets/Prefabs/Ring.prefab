@@ -227,8 +227,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Object
   _terminalVelocity: 8
   body: {fileID: 0}
-  scoreCooldown: 10
+  scoreCooldown: 3
   hasScored: 0
+  hasEnteredTopScorebox: 0
+  hasEnteredBottomScorebox: 0
+  scoreToAdd: 0
 --- !u!61 &7052221010842529251
 BoxCollider2D:
   m_ObjectHideFlags: 0

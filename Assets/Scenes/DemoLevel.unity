@@ -2367,6 +2367,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1694936797173783347, guid: 3171165b39ee60e4aae983f00c37233a, type: 3}
+      propertyPath: points
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3710848271819665591, guid: 3171165b39ee60e4aae983f00c37233a, type: 3}
       propertyPath: m_Name
       value: Pole
@@ -3264,11 +3268,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7860801902180774461, guid: 9f1cfbc7c4cdc1346a691f57b88d1df8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.235
+      value: -0.078
       objectReference: {fileID: 0}
     - target: {fileID: 7860801902180774461, guid: 9f1cfbc7c4cdc1346a691f57b88d1df8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.184
+      value: 0.132
       objectReference: {fileID: 0}
     - target: {fileID: 7860801902180774461, guid: 9f1cfbc7c4cdc1346a691f57b88d1df8, type: 3}
       propertyPath: m_LocalPosition.z

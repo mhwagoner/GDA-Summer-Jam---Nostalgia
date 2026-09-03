@@ -14,6 +14,11 @@ public class Object : MonoBehaviour
     public float scoreCooldown;
     public bool hasScored = false;
 
+    public bool hasEnteredTopScorebox = false;
+    public bool hasEnteredBottomScorebox = false;
+
+    public int scoreToAdd = 0;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -41,5 +46,15 @@ public class Object : MonoBehaviour
             hasScored = false;
             _timeSinceLastScore = 0.0f;
         }
+    }
+
+    public void EarnPoints()
+    {
+        EventBus.Instance.ScoreEarned(scoreToAdd);
+
+        scoreToAdd = 0;
+        hasEnteredBottomScorebox = false;
+        hasEnteredTopScorebox = false;
+        hasScored = true;
     }
 }
