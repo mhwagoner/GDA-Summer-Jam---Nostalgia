@@ -32,4 +32,10 @@ public class EventBus
         OnPlaySFX?.Invoke(effect);
     }
 
+    public event Action<Music> OnPlayMusic;
+
+    public void PlayMusic(Music song)
+    {
+        OnPlayMusic?.Invoke(song);
+    }
 }

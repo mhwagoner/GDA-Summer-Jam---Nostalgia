@@ -9,13 +9,13 @@ public class Level : MonoBehaviour
     public bool isPaused = false;
     public bool levelActive = false;
     public bool isRainbowTime = false;
-    //[SerializeField] private AudioClip scoreSFX;
-    //[SerializeField] private AudioClip loseScoreSFX;
 
     //UI Menus
     public HUDController HUDController;
     public HUDController optionsMenu;
     public HUDController winScreen;
+
+    public AudioController audioController;
 
     private void OnEnable()
     {
@@ -39,6 +39,8 @@ public class Level : MonoBehaviour
         levelActive = true;
         Time.timeScale = 1f;
         isPaused = false;
+        if (audioController != null) audioController.PlayMusic(Music.RING_LEVEL);
+        EventBus.Instance.PlayMusic(Music.RING_LEVEL);
     }
 
     public void EndLevel()
