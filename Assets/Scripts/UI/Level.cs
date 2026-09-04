@@ -9,6 +9,7 @@ public class Level : MonoBehaviour
     public bool isPaused = false;
     public bool levelActive = false;
     public bool isRainbowTime = false;
+    public float timeToActivateRainbow;
 
     //UI Menus
     public HUDController HUDController;
@@ -32,6 +33,8 @@ public class Level : MonoBehaviour
     {
         EventBus.Instance.OnScoreEarned += ChangeScore;
         StartLevel();
+        EventBus.Instance.OnRainbowTimeActivated += ActivateRainbowTime;
+        EventBus.Instance.StartLevel();
     }
 
     public void StartLevel()
@@ -58,11 +61,23 @@ public class Level : MonoBehaviour
         if(levelTime <= 0f)
         {
             EndLevel();
-        } else {
-            levelTime -= Time.deltaTime;
-
-            if(HUDController != null){UpdateHUD();}
         }
+        else if (levelTime <= timeToActivateRainbow)
+        {
+            EventBus.Instance.ActivateRainbowTime();
+        }
+
+        levelTime -= Time.deltaTime;
+
+        if(HUDController != null)
+        {
+            UpdateHUD();
+        }
+    }
+
+    private void ActivateRainbowTime()
+    {
+        isRainbowTime = true;
     }
 
     private void ChangeScore(int scoreToAdd)
