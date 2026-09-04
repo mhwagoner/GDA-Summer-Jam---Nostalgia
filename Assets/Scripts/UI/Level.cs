@@ -9,8 +9,8 @@ public class Level : MonoBehaviour
     public bool isPaused = false;
     public bool levelActive = false;
     public bool isRainbowTime = false;
-    [SerializeField] private AudioClip scoreSFX;
-    [SerializeField] private AudioClip loseScoreSFX;
+    //[SerializeField] private AudioClip scoreSFX;
+    //[SerializeField] private AudioClip loseScoreSFX;
 
     //UI Menus
     public HUDController HUDController;
@@ -66,10 +66,14 @@ public class Level : MonoBehaviour
 
     private void ChangeScore(int scoreToAdd)
     {
-        if(!levelActive){return;}
+        if (!levelActive){return;}
 
-        if(scoreToAdd > 0){GetComponent<AudioSource>().PlayOneShot(scoreSFX, 0.7f);}
-        if(scoreToAdd < 0){GetComponent<AudioSource>().PlayOneShot(loseScoreSFX, 0.7f);}
+        if (scoreToAdd > 0) {
+            EventBus.Instance.PlaySound(SFX.SCORE_EARNED);
+        }
+        if (scoreToAdd < 0) {
+            EventBus.Instance.PlaySound(SFX.SCORE_LOST);
+        }
         
         score += scoreToAdd;
         

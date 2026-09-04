@@ -23,7 +23,13 @@ public class EventBus
     public void ScoreEarned(int points)
     {
         OnScoreEarned?.Invoke(points);
-        UnityEngine.Debug.Log($"Earned {points} points");
+    }
+
+    public event Action<SFX> OnPlaySFX;
+
+    public void PlaySound(SFX effect)
+    {
+        OnPlaySFX?.Invoke(effect);
     }
 
 }
