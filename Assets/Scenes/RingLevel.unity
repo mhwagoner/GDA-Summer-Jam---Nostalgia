@@ -863,6 +863,7 @@ GameObject:
   - component: {fileID: 315331123}
   - component: {fileID: 315331122}
   - component: {fileID: 315331124}
+  - component: {fileID: 315331125}
   m_Layer: 5
   m_Name: MultText
   m_TagString: Untagged
@@ -949,6 +950,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &315331125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315331120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cfd55a5aba973a4794fa8ff495f914d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &317522270
 GameObject:
   m_ObjectHideFlags: 0
@@ -2829,6 +2842,7 @@ MonoBehaviour:
   isPaused: 0
   levelActive: 0
   isRainbowTime: 0
+  timeToActivateRainbow: 15
   HUDController: {fileID: 732999252}
   optionsMenu: {fileID: 317522271}
   winScreen: {fileID: 1875800008}

@@ -24,4 +24,18 @@ public class EventBus
     {
         OnScoreEarned?.Invoke(points);
     }
+
+    public event Action OnRainbowTimeActivated;
+
+    public void ActivateRainbowTime()
+    {
+        OnRainbowTimeActivated?.Invoke();
+    }
+
+    public event Action OnLevelStart;
+
+    public void StartLevel()
+    {
+        OnLevelStart?.Invoke();
+    }
 }
