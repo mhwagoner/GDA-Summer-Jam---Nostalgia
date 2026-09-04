@@ -1,0 +1,494 @@
+fileFormatVersion: 2
+guid: 19303bf72a7f4cc4584ac8eaaa79f041
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4174515459635125849
+    second: multiplier_rainbow_1_0
+  - first:
+      213: 8857546228200367082
+    second: multiplier_rainbow_1_1
+  - first:
+      213: -2571546397460927747
+    second: multiplier_rainbow_1_2
+  - first:
+      213: 3766169693241579904
+    second: multiplier_rainbow_1_3
+  - first:
+      213: -8185912260567216377
+    second: multiplier_rainbow_1_4
+  - first:
+      213: -5084764980133785655
+    second: multiplier_rainbow_1_5
+  - first:
+      213: 7620692408996701543
+    second: multiplier_rainbow_1_6
+  - first:
+      213: -221048357720161260
+    second: multiplier_rainbow_1_7
+  - first:
+      213: 5635811172502555375
+    second: multiplier_rainbow_1_8
+  - first:
+      213: 4346023819712409404
+    second: multiplier_rainbow_1_9
+  - first:
+      213: 4833021161949382025
+    second: multiplier_rainbow_1_10
+  - first:
+      213: 4907002400454665729
+    second: multiplier_rainbow_1_11
+  - first:
+      213: 7280586137634750027
+    second: multiplier_rainbow_1_12
+  - first:
+      213: -8952516187431526154
+    second: multiplier_rainbow_1_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: multiplier_rainbow_1_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 14
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a162179e442116c0800000000000000
+      internalID: -4174515459635125849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplier_rainbow_1_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 17
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae3eb718d535cea70800000000000000
+      internalID: 8857546228200367082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplier_rainbow_1_2
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 16
+        width: 12
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfae7e71d28005cd0800000000000000
+      internalID: -2571546397460927747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplier_rainbow_1_3
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 16
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0899189c16f144430800000000000000
+      internalID: 3766169693241579904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplier_rainbow_1_4
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 16
+        width: 10
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70f406a7b2cc56e80800000000000000
+      internalID: -8185912260567216377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplier_rainbow_1_5
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 39
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cf87c8d0394f69b0800000000000000
+      internalID: -5084764980133785655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplier_rainbow_1_6
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 4
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 765a3ccae5322c960800000000000000
+      internalID: 7620692408996701543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplier_rainbow_1_7
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 16
+        width: 12
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41408e790bdaeecf0800000000000000
+      internalID: -221048357720161260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplier_rainbow_1_8
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 16
+        width: 10
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fea413ec66c663e40800000000000000
+      internalID: 5635811172502555375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplier_rainbow_1_9
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 39
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3f285743ad205c30800000000000000
+      internalID: 4346023819712409404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplier_rainbow_1_10
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 17
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98540fde327521340800000000000000
+      internalID: 4833021161949382025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplier_rainbow_1_11
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 30
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 106e61f4fac291440800000000000000
+      internalID: 4907002400454665729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplier_rainbow_1_12
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 18
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4e3a5a9486d90560800000000000000
+      internalID: 7280586137634750027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: multiplier_rainbow_1_13
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 16
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f0a532c5f542c380800000000000000
+      internalID: -8952516187431526154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      multiplier_rainbow_1_0: -4174515459635125849
+      multiplier_rainbow_1_1: 8857546228200367082
+      multiplier_rainbow_1_10: 4833021161949382025
+      multiplier_rainbow_1_11: 4907002400454665729
+      multiplier_rainbow_1_12: 7280586137634750027
+      multiplier_rainbow_1_13: -8952516187431526154
+      multiplier_rainbow_1_2: -2571546397460927747
+      multiplier_rainbow_1_3: 3766169693241579904
+      multiplier_rainbow_1_4: -8185912260567216377
+      multiplier_rainbow_1_5: -5084764980133785655
+      multiplier_rainbow_1_6: 7620692408996701543
+      multiplier_rainbow_1_7: -221048357720161260
+      multiplier_rainbow_1_8: 5635811172502555375
+      multiplier_rainbow_1_9: 4346023819712409404
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
