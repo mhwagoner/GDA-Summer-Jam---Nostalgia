@@ -88,10 +88,10 @@ public class Level : MonoBehaviour
         HUDController.timeLabel.text = "" + (int)levelTime;
 
         //score
-        HUDController.scoreLabel.text = "Score: " + score;
+        HUDController.scoreLabel.text = "" + score;
 
         //mult
-        HUDController.multLabel.text = "Multiplier: " + mult;
+        HUDController.multLabel.text = "" + mult;
     }
 
     public void OnPause()
