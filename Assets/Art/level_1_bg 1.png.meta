@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bc5b176215ed8af4f80730dd3a8c056f
+guid: d7bfc61190ff97c4c9498a33f796b8ad
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4326872430171513394
-    second: Tank_0
+      213: 4832348863802569306
+    second: level_1_bg 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 512
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tank_0
+      name: level_1_bg 1_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 5
-        width: 494
-        height: 501
+        x: 0
+        y: 0
+        width: 480
+        height: 270
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 232edccec832c0c30800000000000000
-      internalID: 4326872430171513394
+      spriteID: a52f6b150b3ff0340800000000000000
+      internalID: 4832348863802569306
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Tank_0: 4326872430171513394
+      level_1_bg 1_0: 4832348863802569306
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
