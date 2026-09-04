@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
-public class RainbowText : MonoBehaviour
+public class RainbowAnimator : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -15,6 +15,12 @@ public class RainbowText : MonoBehaviour
     {
         
     }
+    private void OnDestroy()
+    {
+        EventBus.Instance.OnRainbowTimeActivated -= ActivateRainbowTime;
+        EventBus.Instance.OnLevelStart -= DeactivateRainbowTime;
+    }
+
 
     void ActivateRainbowTime()
     {
