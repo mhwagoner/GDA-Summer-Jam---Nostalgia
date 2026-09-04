@@ -32,6 +32,17 @@ public class AudioController : MonoBehaviour
         }
     }
 
+    public void PlaySFX(SFX effect, AudioSource source)
+    {
+        if (effect >= 0 && (int)effect < sfxClips.Length)
+        {
+            source.clip = sfxClips[(int)effect];
+            source.volume = sfxVolume;
+            source.Play();
+        }
+
+    }
+
     public void PlayMusic(Music song)
     {
         if (song >= 0 && (int)song < musicClips.Length)

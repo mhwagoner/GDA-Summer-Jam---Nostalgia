@@ -15,6 +15,8 @@ public class WaterJet : MonoBehaviour
 
     public ParticleSystem particles;
 
+    public AudioSource audioSource;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,6 +26,8 @@ public class WaterJet : MonoBehaviour
         }
 
         SetJetStatus(colliderActive);
+
+        if (audioSource == null) Debug.Log("Water jet not provided an AudioSource");
     }
 
     // Update is called once per frame
@@ -35,12 +39,17 @@ public class WaterJet : MonoBehaviour
     private void SetJetStatus(bool status)
     {
         colliderActive = status;
-
-        if (particles != null)
+        if (colliderActive)
         {
-            if (colliderActive) particles.Play();
-            else particles.Stop();
+            if (particles != null) particles.Play();
+            if (audioSource != null) Game.Instance.audioController.PlaySFX(SFX.BUBBLES, audioSource);
         }
+        else
+        {
+            if (particles != null) particles.Stop();
+            if (audioSource != null) audioSource.Stop();
+        }
+
     }
 
     private void OnTriggerStay2D(Collider2D collision)
