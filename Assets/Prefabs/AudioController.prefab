@@ -185,6 +185,7 @@ MonoBehaviour:
   musicSource: {fileID: 8109131174262414169}
   musicClips:
   - {fileID: 8300000, guid: bcf64ff3451ac184d867d680f8c2eec9, type: 3}
+  - {fileID: 8300000, guid: d2bfaaab0e31d4641b6a84b54315e1a4, type: 3}
   musicVolume: 0.75
 --- !u!82 &8093383538565582138
 AudioSource:

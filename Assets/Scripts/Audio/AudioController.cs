@@ -34,10 +34,10 @@ public class AudioController : MonoBehaviour
 
     public void PlayMusic(Music song)
     {
-        Debug.Log("Play song");
         if (song >= 0 && (int)song < musicClips.Length)
         {
-            Debug.Log("Play song");
+            if (musicSource == null) return;
+
             musicSource.clip = musicClips[(int)song];
             musicSource.volume = musicVolume;
             musicSource.Play();
