@@ -738,6 +738,51 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &623818682
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 623818684}
+  - component: {fileID: 623818683}
+  m_Layer: 0
+  m_Name: TitleScreen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &623818683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623818682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff399722413165048b4189fb0df7689e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  audioController: {fileID: 1812843242}
+--- !u!4 &623818684
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623818682}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.59015, y: 5.24673, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &669964065
 GameObject:
   m_ObjectHideFlags: 0
@@ -1663,6 +1708,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1797548422}
   m_CullTransparentMesh: 1
+--- !u!114 &1812843242 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3350055663100460712, guid: efa6b9b0d5031e441924f92c754b70c2, type: 3}
+  m_PrefabInstance: {fileID: 1917617920}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d838e28786dd9944ca36af02b961fb2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioController
 --- !u!1 &1833824844
 GameObject:
   m_ObjectHideFlags: 0
@@ -1855,7 +1911,7 @@ PrefabInstance:
     - target: {fileID: 8109131174262414169, guid: efa6b9b0d5031e441924f92c754b70c2, type: 3}
       propertyPath: m_Resource
       value: 
-      objectReference: {fileID: 8300000, guid: d2bfaaab0e31d4641b6a84b54315e1a4, type: 3}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2144,3 +2200,4 @@ SceneRoots:
   - {fileID: 186913213}
   - {fileID: 490069037}
   - {fileID: 1917617920}
+  - {fileID: 623818684}

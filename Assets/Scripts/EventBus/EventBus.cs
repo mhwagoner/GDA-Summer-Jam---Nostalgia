@@ -24,18 +24,4 @@ public class EventBus
     {
         OnScoreEarned?.Invoke(points);
     }
-
-    public event Action<SFX> OnPlaySFX;
-
-    public void PlaySound(SFX effect)
-    {
-        OnPlaySFX?.Invoke(effect);
-    }
-
-    public event Action<Music> OnPlayMusic;
-
-    public void PlayMusic(Music song)
-    {
-        OnPlayMusic?.Invoke(song);
-    }
 }

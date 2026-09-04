@@ -18,10 +18,10 @@ public class AudioController : MonoBehaviour
     void Start()
     {
         if (sfxSource == null) Debug.Log("AudioController not provided an AudioSource for SFX");
-        else EventBus.Instance.OnPlaySFX += PlaySFX; 
 
         if (musicSource == null) Debug.Log("AudioController not provided an AudioSource for music");
-        else EventBus.Instance.OnPlayMusic += PlayMusic;
+
+        Game.Instance.audioController = this;
     }
 
     public void PlaySFX(SFX effect)
@@ -36,8 +36,6 @@ public class AudioController : MonoBehaviour
     {
         if (song >= 0 && (int)song < musicClips.Length)
         {
-            if (musicSource == null) return;
-
             musicSource.clip = musicClips[(int)song];
             musicSource.volume = musicVolume;
             musicSource.Play();

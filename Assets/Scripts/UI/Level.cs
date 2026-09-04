@@ -40,7 +40,6 @@ public class Level : MonoBehaviour
         Time.timeScale = 1f;
         isPaused = false;
         if (audioController != null) audioController.PlayMusic(Music.RING_LEVEL);
-        EventBus.Instance.PlayMusic(Music.RING_LEVEL);
     }
 
     public void EndLevel()
@@ -71,10 +70,10 @@ public class Level : MonoBehaviour
         if (!levelActive){return;}
 
         if (scoreToAdd > 0) {
-            EventBus.Instance.PlaySound(SFX.SCORE_EARNED);
+            audioController.PlaySFX(SFX.SCORE_EARNED);
         }
         if (scoreToAdd < 0) {
-            EventBus.Instance.PlaySound(SFX.SCORE_LOST);
+            audioController.PlaySFX(SFX.SCORE_LOST);
         }
         
         score += scoreToAdd;
