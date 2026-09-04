@@ -5,7 +5,8 @@ public class ScoreCollider : MonoBehaviour
     public enum Type
     {
         ENTRY,
-        EXIT
+        EXIT,
+        UNPAIRED,
     }
 
     public Type type;
@@ -44,6 +45,13 @@ public class ScoreCollider : MonoBehaviour
         else if (type == Type.EXIT)
         {
             obj.hasEnteredBottomScorebox = true;
+        }
+        //Unpaired ones should just give points
+        else if (type == Type.UNPAIRED)
+        {
+            obj.scoreToAdd = goal.points;
+            obj.EarnPoints();
+            return;
         }
 
         // If both hitboxes were hit, earn points
