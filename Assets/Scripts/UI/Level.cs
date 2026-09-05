@@ -94,6 +94,7 @@ public class Level : MonoBehaviour
     private void ActivateRainbowTime()
     {
         isRainbowTime = true;
+        audioController.PlayMusic(Music.RAINBOW);
         EventBus.Instance.ActivateRainbowTime();
     }
 

@@ -78,7 +78,7 @@
                 {
                     "name": "",
                     "id": "69a03b6c-67ec-4cbf-be9b-bc9647697350",
-                    "path": "<Keyboard>/leftArrow",
+                    "path": "<Keyboard>/j",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -89,7 +89,7 @@
                 {
                     "name": "",
                     "id": "fd85d447-d765-475d-80ce-28f09131236f",
-                    "path": "<Keyboard>/rightArrow",
+                    "path": "<Keyboard>/l",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
