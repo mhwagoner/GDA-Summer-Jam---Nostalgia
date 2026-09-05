@@ -21,6 +21,9 @@ public class Level : MonoBehaviour
 
     public Music music;
 
+    public float consecutiveScoreTime;
+    private ScoreCounter _scoreCounter;
+
     private void OnEnable()
     {
         //
@@ -36,6 +39,8 @@ public class Level : MonoBehaviour
     {
         GameObject audioControllerObj = Instantiate(audioControllerPrototype);
         if (!audioControllerObj.TryGetComponent(out audioController)) Debug.Log("AudioController prototype does not have an AudioController component");
+
+        _scoreCounter = new ScoreCounter(consecutiveScoreTime);
 
         EventBus.Instance.OnScoreEarned += ChangeScore;
         EventBus.Instance.OnMultEarned += ChangeMult;
@@ -89,6 +94,8 @@ public class Level : MonoBehaviour
         {
             UpdateHUD();
         }
+
+        _scoreCounter.Update(Time.deltaTime);
     }
 
     private void ActivateRainbowTime()
@@ -111,9 +118,11 @@ public class Level : MonoBehaviour
         if (scoreToAdd > 0) {
             audioController.PlaySFX(SFX.SCORE_EARNED);
             ChangeMult(multPerScore);
+            _scoreCounter.CountScore();
         }
         if (scoreToAdd < 0) {
             audioController.PlaySFX(SFX.SCORE_LOST);
+            _scoreCounter.LoseScore();
         }
         
         score += scoreToAdd;
