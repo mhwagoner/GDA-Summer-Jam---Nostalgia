@@ -2355,7 +2355,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 912872155}
         m_TargetAssemblyTypeName: Level, Assembly-CSharp
-        m_MethodName: OnPause
+        m_MethodName: TogglePauseMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4467,8 +4467,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 912872155}
         m_TargetAssemblyTypeName: Level, Assembly-CSharp
-        m_MethodName: OnPause
-        m_Mode: 1
+        m_MethodName: PauseTime
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5297,8 +5297,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 912872155}
         m_TargetAssemblyTypeName: Level, Assembly-CSharp
-        m_MethodName: OnPause
-        m_Mode: 1
+        m_MethodName: PauseTime
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
