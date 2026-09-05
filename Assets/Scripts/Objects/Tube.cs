@@ -43,9 +43,7 @@ public class Tube : MonoBehaviour
         {
             LayerMask layerToBlock = (1 << entryCollider.layer);
             ball.GetComponent<CircleCollider2D>().excludeLayers |= layerToBlock;
-            ball.transform.localPosition = ball.initialPosition;
-            ball.canScore = true;
-            ball.ResetScoreCooldown();
+            ball.ResetObject();
         }
         _balls.Clear();
     }

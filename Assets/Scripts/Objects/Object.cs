@@ -18,15 +18,17 @@ public class Object : MonoBehaviour
     public bool hasEnteredTopScorebox = false;
     public bool hasEnteredBottomScorebox = false;
 
+    public bool hasEnteredOneway = false;
+
     public int scoreToAdd = 0;
 
-    public Vector3 initialPosition;
+    private Vector3 _initialPosition;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
-        initialPosition = transform.localPosition;
+        _initialPosition = transform.localPosition;
     }
 
     private void FixedUpdate()
@@ -52,10 +54,16 @@ public class Object : MonoBehaviour
         }
     }
 
-    public void ResetScoreCooldown()
+    public void ResetObject()
     {
         _timeSinceLastScore = 0.0f;
         hasScored = false;
+        canScore = true;
+        transform.localPosition = _initialPosition;
+        hasEnteredBottomScorebox = false;
+        hasEnteredTopScorebox = false;
+        hasEnteredOneway = false;
+        scoreToAdd = 0;
     }
 
     public void EarnPoints()
