@@ -48,10 +48,10 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 192
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 3895
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -70,7 +70,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.45
+  m_Radius: 0.09
 --- !u!50 &8900107443512438843
 Rigidbody2D:
   serializedVersion: 5
@@ -114,6 +114,11 @@ MonoBehaviour:
   body: {fileID: 0}
   scoreCooldown: 10
   hasScored: 0
+  canScore: 1
+  hasEnteredTopScorebox: 0
+  hasEnteredBottomScorebox: 0
+  hasEnteredOneway: 0
+  scoreToAdd: 0
 --- !u!1 &9038219791808813725
 GameObject:
   m_ObjectHideFlags: 0
@@ -125,6 +130,7 @@ GameObject:
   - component: {fileID: 8866328247152864866}
   - component: {fileID: 3297780059661523434}
   - component: {fileID: 5541113177192724243}
+  - component: {fileID: 3637021274727838012}
   m_Layer: 0
   m_Name: Ball_Sprite
   m_TagString: Untagged
@@ -228,3 +234,39 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!58 &3637021274727838012
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9038219791808813725}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.45
