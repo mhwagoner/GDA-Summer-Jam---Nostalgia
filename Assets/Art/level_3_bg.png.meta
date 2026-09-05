@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cb6bc348d9abd4c4a93e22119ba5bf8f
+guid: 2fbb699056bf84447a84f6d0dbc7bf39
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8355872172625841993
-    second: SpaceCrush2_0
+      213: 6576040612095381045
+    second: level_3_bg_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SpaceCrush2_0
+      name: level_3_bg_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 366
-        height: 238
+        width: 480
+        height: 270
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7b0b012c78af90c80800000000000000
-      internalID: -8355872172625841993
+      spriteID: 53ecc78681ac24b50800000000000000
+      internalID: 6576040612095381045
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SpaceCrush2_0: -8355872172625841993
+      level_3_bg_0: 6576040612095381045
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
