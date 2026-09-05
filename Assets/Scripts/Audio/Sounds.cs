@@ -12,4 +12,5 @@ public enum Music
     TITLE_SCREEN,
     BASKET_LEVEL,
     TUBE_LEVEL,
+    RAINBOW,
 }
