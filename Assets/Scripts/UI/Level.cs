@@ -16,7 +16,6 @@ public class Level : MonoBehaviour
     public HUDController optionsMenu;
     public HUDController winScreen;
 
-    [SerializeField]
     private AudioController audioController;
     public GameObject audioControllerPrototype;
 
@@ -69,6 +68,7 @@ public class Level : MonoBehaviour
         float finalScore = mult * score;
         winScreen.scoreLabel.text = $"Final Score: {(int)finalScore}";
         winScreen.ToggleOpen(true);
+        EventBus.Instance.EndLevel();
     }
 
     // Update is called once per frame

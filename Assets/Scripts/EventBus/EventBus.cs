@@ -53,4 +53,11 @@ public class EventBus
     {
         OnTubeFilled?.Invoke(bonusScore, bonusMult);
     }
+
+    public event Action OnLevelEnd;
+
+    public void EndLevel()
+    {
+        OnLevelEnd?.Invoke();
+    }
 }

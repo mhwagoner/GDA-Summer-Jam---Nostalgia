@@ -36,6 +36,13 @@ public class Machine : MonoBehaviour
 
         // Little hack to make the splash play immediately after input
         _timeSinceLastSplash = timeBetweenSplashes;
+
+        EventBus.Instance.OnLevelEnd += ResetMachine;
+    }
+
+    private void OnDestroy()
+    {
+        EventBus.Instance.OnLevelEnd -= ResetMachine;
     }
 
     // Update is called once per frame
@@ -49,6 +56,11 @@ public class Machine : MonoBehaviour
         {
             CheckInput(_rotateR, -1);
         }
+    }
+
+    void ResetMachine()
+    {
+        transform.rotation = Quaternion.identity;
     }
 
     void CheckInput(InputAction action, int factor)
