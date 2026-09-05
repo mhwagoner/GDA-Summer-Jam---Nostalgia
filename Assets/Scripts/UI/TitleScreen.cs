@@ -10,6 +10,8 @@ public class TitleScreen : MonoBehaviour
         GameObject audioControllerObj = Instantiate(audioControllerPrototype);
         if (!audioControllerObj.TryGetComponent(out audioController)) Debug.Log("AudioController prototype does not have an AudioController component");
         else audioController.PlayMusic(Music.TITLE_SCREEN);
+
+        Debug.Log(Time.timeScale);
     }
 
     // Update is called once per frame
