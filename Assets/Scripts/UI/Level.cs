@@ -5,7 +5,7 @@ public class Level : MonoBehaviour
     public float levelTime = 60f;
     public int score = 0;
     public float mult = 1f;
-    public const float multToAdd = 0.1f;
+    public const float multPerScore = 0.1f;
     public bool isPaused = false;
     public bool levelActive = false;
     public bool isRainbowTime = false;
@@ -34,6 +34,7 @@ public class Level : MonoBehaviour
     void Start()
     {
         EventBus.Instance.OnScoreEarned += ChangeScore;
+        EventBus.Instance.OnMultEarned += ChangeMult;
         StartLevel();
         EventBus.Instance.OnRainbowTimeActivated += ActivateRainbowTime;
         EventBus.Instance.StartLevel();
@@ -53,7 +54,7 @@ public class Level : MonoBehaviour
         Time.timeScale = 0f;
 
         float finalScore = mult * score;
-        winScreen.scoreLabel.text = "Final Score: " + finalScore;
+        winScreen.scoreLabel.text = $"Final Score: {(int)finalScore}";
         winScreen.ToggleOpen(true);
     }
 
@@ -94,7 +95,13 @@ public class Level : MonoBehaviour
         }
         
         score += scoreToAdd;
-        
+
+        ChangeMult(multPerScore);
+    }
+
+    private void ChangeMult(float multToAdd)
+    {
+
         if(isRainbowTime){mult += multToAdd * 3;}
         else{mult += multToAdd;}
     }

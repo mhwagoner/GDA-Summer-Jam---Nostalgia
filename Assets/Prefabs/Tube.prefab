@@ -253,6 +253,8 @@ MonoBehaviour:
   scoreCollider: {fileID: 3534598368872117901}
   entryCollider: {fileID: 4838622234521766754}
   numBalls: 0
+  bonusPoints: 3
+  bonusMult: 0.05
 --- !u!1 &4838622234521766754
 GameObject:
   m_ObjectHideFlags: 0

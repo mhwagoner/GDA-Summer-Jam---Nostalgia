@@ -38,4 +38,11 @@ public class EventBus
     {
         OnLevelStart?.Invoke();
     }
+
+    public event Action<float> OnMultEarned;
+
+    public void MultEarned(float mult)
+    {
+        OnMultEarned?.Invoke(mult);
+    }
 }

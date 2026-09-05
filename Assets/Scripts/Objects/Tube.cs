@@ -8,6 +8,10 @@ public class Tube : MonoBehaviour
     [SerializeField] private GameObject entryCollider;
     public int numBalls;
     private List<Object> _balls = new();
+
+    public int bonusPoints;
+    public float bonusMult;
+    public float timeToResetBalls = 3.0f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,7 +26,6 @@ public class Tube : MonoBehaviour
 
     private void AddBall(Object obj)
     {
-        //Debug.Log("Added ball");
         _balls.Add(obj);
         obj.canScore = false;
         if (_balls.Count >= numBalls)
@@ -33,7 +36,9 @@ public class Tube : MonoBehaviour
 
     private IEnumerator WaitAndResetBalls()
     {
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(timeToResetBalls);
+        EventBus.Instance.ScoreEarned(bonusPoints);
+        EventBus.Instance.MultEarned(bonusMult);
         ResetBalls();
     }
 
