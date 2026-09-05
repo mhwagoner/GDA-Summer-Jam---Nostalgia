@@ -1,8 +1,10 @@
+using System;
 using UnityEngine;
 
 public class OneWayCollider : MonoBehaviour
 {
     [SerializeField] private Collider2D colliderToBlock;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -26,6 +28,7 @@ public class OneWayCollider : MonoBehaviour
         }
 
         // Layer number represents the bit position in the mask, not the mask itself
+        Debug.Log("One Way passed");
         LayerMask layerToClear = 1 << colliderToBlock.gameObject.layer;
         obj.GetComponent<CircleCollider2D>().excludeLayers &= ~layerToClear;
     }

@@ -704,6 +704,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4334929498229032429, guid: 9bb95552677853b469c0489fd6db5340, type: 3}
+      propertyPath: numBalls
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4425547727997696275, guid: 9bb95552677853b469c0489fd6db5340, type: 3}
       propertyPath: m_Name
       value: Tube
@@ -1657,11 +1661,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 896540139085291555, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.024
+      value: 2.716
       objectReference: {fileID: 0}
     - target: {fileID: 896540139085291555, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.027
+      value: 0.066
       objectReference: {fileID: 0}
     - target: {fileID: 896540139085291555, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1797,6 +1801,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4334929498229032429, guid: 9bb95552677853b469c0489fd6db5340, type: 3}
+      propertyPath: numBalls
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4425547727997696275, guid: 9bb95552677853b469c0489fd6db5340, type: 3}
       propertyPath: m_Name
       value: Tube (2)
@@ -1832,10 +1840,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4838622234521766754, guid: 9bb95552677853b469c0489fd6db5340, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 934179007}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9bb95552677853b469c0489fd6db5340, type: 3}
 --- !u!4 &477718688 stripped
 Transform:
@@ -2818,24 +2823,6 @@ MonoBehaviour:
   optionsMenu: {fileID: 317522271}
   winScreen: {fileID: 1875800008}
   audioController: {fileID: 1193005267}
---- !u!1 &934179004 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4838622234521766754, guid: 9bb95552677853b469c0489fd6db5340, type: 3}
-  m_PrefabInstance: {fileID: 477718687}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &934179007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 934179004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94f83c8c7a955bf4b90d66a29ab40998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  colliderToBlock: {fileID: 0}
 --- !u!1001 &939978644
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3598,11 +3585,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 896540139085291555, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.688
+      value: 1.116
       objectReference: {fileID: 0}
     - target: {fileID: 896540139085291555, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.025
+      value: -1.333
       objectReference: {fileID: 0}
     - target: {fileID: 896540139085291555, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4420,11 +4407,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 896540139085291555, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.81
+      value: -0.582
       objectReference: {fileID: 0}
     - target: {fileID: 896540139085291555, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.081
+      value: -1.649
       objectReference: {fileID: 0}
     - target: {fileID: 896540139085291555, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5015,6 +5002,10 @@ PrefabInstance:
     - target: {fileID: 1730086006572684615, guid: 9bb95552677853b469c0489fd6db5340, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4334929498229032429, guid: 9bb95552677853b469c0489fd6db5340, type: 3}
+      propertyPath: numBalls
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4425547727997696275, guid: 9bb95552677853b469c0489fd6db5340, type: 3}
       propertyPath: m_Name

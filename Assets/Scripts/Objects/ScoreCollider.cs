@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class ScoreCollider : MonoBehaviour
@@ -12,6 +13,8 @@ public class ScoreCollider : MonoBehaviour
     public Type type;
 
     public Goal goal;
+
+    public event Action<Object> OnObjectEnter;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -29,7 +32,7 @@ public class ScoreCollider : MonoBehaviour
     {
         if (!collision.TryGetComponent(out Object obj)) return;
 
-        if (obj.hasScored) return;
+        if (obj.hasScored || !obj.canScore) return;
 
         if (type == Type.ENTRY)
         {
@@ -50,8 +53,8 @@ public class ScoreCollider : MonoBehaviour
         else if (type == Type.UNPAIRED)
         {
             obj.scoreToAdd = goal.points;
-            obj.EarnPoints();
-            return;
+            obj.hasEnteredBottomScorebox = true;
+            obj.hasEnteredTopScorebox = true;
         }
 
         // If both hitboxes were hit, earn points
@@ -59,6 +62,8 @@ public class ScoreCollider : MonoBehaviour
         {
             obj.EarnPoints();
         }
+
+        OnObjectEnter?.Invoke(obj);
     }
 
     // Clear whichever collider the object hit
