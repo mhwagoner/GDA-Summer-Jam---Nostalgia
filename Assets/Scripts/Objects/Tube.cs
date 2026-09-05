@@ -30,6 +30,7 @@ public class Tube : MonoBehaviour
         obj.canScore = false;
         if (_balls.Count >= numBalls)
         {
+            EventBus.Instance.TubeFilled(bonusPoints, bonusMult);
             StartCoroutine(WaitAndResetBalls());
         }
     }
@@ -37,8 +38,6 @@ public class Tube : MonoBehaviour
     private IEnumerator WaitAndResetBalls()
     {
         yield return new WaitForSeconds(timeToResetBalls);
-        EventBus.Instance.ScoreEarned(bonusPoints);
-        EventBus.Instance.MultEarned(bonusMult);
         ResetBalls();
     }
 

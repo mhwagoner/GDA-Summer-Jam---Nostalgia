@@ -39,10 +39,18 @@ public class EventBus
         OnLevelStart?.Invoke();
     }
 
+    // note: UNUSED
     public event Action<float> OnMultEarned;
 
     public void MultEarned(float mult)
     {
         OnMultEarned?.Invoke(mult);
+    }
+
+    public event Action<int, float> OnTubeFilled;
+
+    public void TubeFilled(int bonusScore, float bonusMult)
+    {
+        OnTubeFilled?.Invoke(bonusScore, bonusMult);
     }
 }

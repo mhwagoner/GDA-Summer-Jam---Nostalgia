@@ -35,6 +35,7 @@ public class Level : MonoBehaviour
     {
         EventBus.Instance.OnScoreEarned += ChangeScore;
         EventBus.Instance.OnMultEarned += ChangeMult;
+        EventBus.Instance.OnTubeFilled += ApplyTubeBonus;
         StartLevel();
         EventBus.Instance.OnRainbowTimeActivated += ActivateRainbowTime;
         EventBus.Instance.StartLevel();
@@ -83,6 +84,12 @@ public class Level : MonoBehaviour
         isRainbowTime = true;
     }
 
+    private void ApplyTubeBonus(int bonusPoints, float bonusMult)
+    {
+        score += bonusPoints;
+        ChangeMult(bonusMult);
+    }
+
     private void ChangeScore(int scoreToAdd)
     {
         if (!levelActive){return;}
@@ -109,13 +116,13 @@ public class Level : MonoBehaviour
     private void UpdateHUD()
     {
         //timer
-        HUDController.timeLabel.text = "" + (int)levelTime;
+        HUDController.timeLabel.text = $"{(int)levelTime}";
 
         //score
-        HUDController.scoreLabel.text = "" + score;
+        HUDController.scoreLabel.text = $"{score}";
 
         //mult
-        HUDController.multLabel.text = "" + mult;
+        HUDController.multLabel.text = string.Format("{0:0.0#}", mult);
     }
 
     public void OnPause()
