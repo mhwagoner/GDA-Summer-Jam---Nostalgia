@@ -1848,6 +1848,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3637021274727838012, guid: f400c681bb825f5419813983f1041f41, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
     - target: {fileID: 7729956588745618283, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Name
       value: Ball (2)
@@ -1858,7 +1862,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8936562399356644583, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
-      value: 512
+      value: 3895
       objectReference: {fileID: 0}
     - target: {fileID: 9038219791808813725, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Layer
@@ -2237,6 +2241,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3637021274727838012, guid: f400c681bb825f5419813983f1041f41, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 2048
+      objectReference: {fileID: 0}
     - target: {fileID: 7729956588745618283, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Name
       value: Ball (3)
@@ -2247,7 +2255,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8936562399356644583, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
-      value: 2048
+      value: 3895
       objectReference: {fileID: 0}
     - target: {fileID: 9038219791808813725, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Layer
@@ -2467,6 +2475,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.7882353
       objectReference: {fileID: 0}
+    - target: {fileID: 3637021274727838012, guid: f400c681bb825f5419813983f1041f41, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 1024
+      objectReference: {fileID: 0}
     - target: {fileID: 7729956588745618283, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Name
       value: Ball (6)
@@ -2477,7 +2489,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8936562399356644583, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
-      value: 1024
+      value: 3895
       objectReference: {fileID: 0}
     - target: {fileID: 9038219791808813725, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Layer
@@ -2949,7 +2961,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 136c113e75feb5e4c95c2a3f0ad94c6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScoreManager
-  levelTime: 5
+  levelTime: 60
   score: 0
   mult: 1
   isPaused: 0
@@ -3033,6 +3045,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3637021274727838012, guid: f400c681bb825f5419813983f1041f41, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 2048
+      objectReference: {fileID: 0}
     - target: {fileID: 7729956588745618283, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Name
       value: Ball (5)
@@ -3043,7 +3059,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8936562399356644583, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
-      value: 2048
+      value: 3895
       objectReference: {fileID: 0}
     - target: {fileID: 9038219791808813725, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Layer
@@ -3296,6 +3312,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.7882353
       objectReference: {fileID: 0}
+    - target: {fileID: 3637021274727838012, guid: f400c681bb825f5419813983f1041f41, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 1024
+      objectReference: {fileID: 0}
     - target: {fileID: 7729956588745618283, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Name
       value: Ball (8)
@@ -3306,7 +3326,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8936562399356644583, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
-      value: 1024
+      value: 3895
       objectReference: {fileID: 0}
     - target: {fileID: 9038219791808813725, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Layer
@@ -3786,6 +3806,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3637021274727838012, guid: f400c681bb825f5419813983f1041f41, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
     - target: {fileID: 7729956588745618283, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Name
       value: Ball (1)
@@ -3796,7 +3820,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8936562399356644583, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
-      value: 512
+      value: 3895
       objectReference: {fileID: 0}
     - target: {fileID: 9038219791808813725, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Layer
@@ -4021,6 +4045,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.7882353
       objectReference: {fileID: 0}
+    - target: {fileID: 3637021274727838012, guid: f400c681bb825f5419813983f1041f41, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 1024
+      objectReference: {fileID: 0}
     - target: {fileID: 7729956588745618283, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Name
       value: Ball (7)
@@ -4031,7 +4059,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8936562399356644583, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
-      value: 1024
+      value: 3895
       objectReference: {fileID: 0}
     - target: {fileID: 9038219791808813725, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Layer
@@ -4210,6 +4238,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3637021274727838012, guid: f400c681bb825f5419813983f1041f41, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 2048
+      objectReference: {fileID: 0}
     - target: {fileID: 7729956588745618283, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Name
       value: Ball (4)
@@ -4220,7 +4252,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8936562399356644583, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
-      value: 2048
+      value: 3895
       objectReference: {fileID: 0}
     - target: {fileID: 9038219791808813725, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Layer
@@ -4608,6 +4640,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3637021274727838012, guid: f400c681bb825f5419813983f1041f41, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
     - target: {fileID: 7729956588745618283, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Name
       value: Ball
@@ -4618,7 +4654,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8936562399356644583, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
-      value: 512
+      value: 3895
       objectReference: {fileID: 0}
     - target: {fileID: 9038219791808813725, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Layer
