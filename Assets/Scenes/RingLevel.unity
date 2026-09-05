@@ -2690,7 +2690,6 @@ MonoBehaviour:
   HUDController: {fileID: 732999252}
   optionsMenu: {fileID: 317522271}
   winScreen: {fileID: 1875800008}
-  audioController: {fileID: 0}
   audioControllerPrototype: {fileID: 5840971454911539781, guid: efa6b9b0d5031e441924f92c754b70c2, type: 3}
   music: 0
 --- !u!1001 &912883422
@@ -3158,7 +3157,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: BasketLevel
+          m_StringArgument: TubeLevel
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1214946718
@@ -4805,7 +4804,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -10
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 8421513857202827604, guid: aac7bde5f1d31e64086dd40349dca993, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f63f2aa49f36d5d46aa4034ba9e993dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
