@@ -38,7 +38,7 @@ public class Level : MonoBehaviour
         if (!audioControllerObj.TryGetComponent(out audioController)) Debug.Log("AudioController prototype does not have an AudioController component");
 
         EventBus.Instance.OnScoreEarned += ChangeScore;
-        EventBus.Instance.OnMultEarned += ChangeMult;
+        //EventBus.Instance.OnMultEarned += ChangeMult;
         EventBus.Instance.OnTubeFilled += ApplyTubeBonus;
         StartLevel();
         EventBus.Instance.StartLevel();
@@ -121,9 +121,9 @@ public class Level : MonoBehaviour
 
     private void ChangeMult(float multToAdd)
     {
-
-        if(isRainbowTime){mult += multToAdd * 3;}
-        else{mult += multToAdd;}
+        float multAdd = isRainbowTime ? multToAdd * 3 : multToAdd;
+        mult += multAdd;
+        EventBus.Instance.MultEarned(multAdd);
     }
 
     private void UpdateHUD()
