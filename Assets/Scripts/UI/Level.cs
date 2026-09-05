@@ -16,7 +16,8 @@ public class Level : MonoBehaviour
     public HUDController optionsMenu;
     public HUDController winScreen;
 
-    public AudioController audioController;
+    private AudioController audioController;
+    public GameObject audioControllerPrototype;
 
     public Music music;
 
@@ -33,12 +34,21 @@ public class Level : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        GameObject audioControllerObj = Instantiate(audioControllerPrototype);
+        if (!audioControllerObj.TryGetComponent(out audioController)) Debug.Log("AudioController prototype does not have an AudioController component");
+
         EventBus.Instance.OnScoreEarned += ChangeScore;
         EventBus.Instance.OnMultEarned += ChangeMult;
         EventBus.Instance.OnTubeFilled += ApplyTubeBonus;
         StartLevel();
-        EventBus.Instance.OnRainbowTimeActivated += ActivateRainbowTime;
         EventBus.Instance.StartLevel();
+    }
+
+    private void OnDestroy()
+    {
+        EventBus.Instance.OnScoreEarned -= ChangeScore;
+        EventBus.Instance.OnMultEarned -= ChangeMult;
+        EventBus.Instance.OnTubeFilled -= ApplyTubeBonus;
     }
 
     public void StartLevel()
@@ -46,6 +56,7 @@ public class Level : MonoBehaviour
         levelActive = true;
         Time.timeScale = 1f;
         isPaused = false;
+        isRainbowTime = false;
         if (audioController != null) audioController.PlayMusic(music);
     }
 
@@ -57,6 +68,7 @@ public class Level : MonoBehaviour
         float finalScore = mult * score;
         winScreen.scoreLabel.text = $"Final Score: {(int)finalScore}";
         winScreen.ToggleOpen(true);
+        EventBus.Instance.EndLevel();
     }
 
     // Update is called once per frame
@@ -66,9 +78,9 @@ public class Level : MonoBehaviour
         {
             EndLevel();
         }
-        else if (levelTime <= timeToActivateRainbow)
+        else if (levelTime <= timeToActivateRainbow && !isRainbowTime)
         {
-            EventBus.Instance.ActivateRainbowTime();
+            ActivateRainbowTime();
         }
 
         levelTime -= Time.deltaTime;
@@ -82,6 +94,8 @@ public class Level : MonoBehaviour
     private void ActivateRainbowTime()
     {
         isRainbowTime = true;
+        audioController.PlayMusic(Music.RAINBOW);
+        EventBus.Instance.ActivateRainbowTime();
     }
 
     private void ApplyTubeBonus(int bonusPoints, float bonusMult)
@@ -96,14 +110,13 @@ public class Level : MonoBehaviour
 
         if (scoreToAdd > 0) {
             audioController.PlaySFX(SFX.SCORE_EARNED);
+            ChangeMult(multPerScore);
         }
         if (scoreToAdd < 0) {
             audioController.PlaySFX(SFX.SCORE_LOST);
         }
         
         score += scoreToAdd;
-
-        ChangeMult(multPerScore);
     }
 
     private void ChangeMult(float multToAdd)

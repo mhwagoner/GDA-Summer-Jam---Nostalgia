@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -40,7 +39,6 @@ public class AudioController : MonoBehaviour
             source.volume = sfxVolume;
             source.Play();
         }
-
     }
 
     public void PlayMusic(Music song)

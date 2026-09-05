@@ -1848,6 +1848,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3637021274727838012, guid: f400c681bb825f5419813983f1041f41, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
     - target: {fileID: 7729956588745618283, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Name
       value: Ball (2)
@@ -1858,7 +1862,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8936562399356644583, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
-      value: 512
+      value: 3895
       objectReference: {fileID: 0}
     - target: {fileID: 9038219791808813725, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Layer
@@ -2237,6 +2241,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3637021274727838012, guid: f400c681bb825f5419813983f1041f41, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 2048
+      objectReference: {fileID: 0}
     - target: {fileID: 7729956588745618283, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Name
       value: Ball (3)
@@ -2247,7 +2255,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8936562399356644583, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
-      value: 2048
+      value: 3895
       objectReference: {fileID: 0}
     - target: {fileID: 9038219791808813725, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Layer
@@ -2467,6 +2475,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.7882353
       objectReference: {fileID: 0}
+    - target: {fileID: 3637021274727838012, guid: f400c681bb825f5419813983f1041f41, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 1024
+      objectReference: {fileID: 0}
     - target: {fileID: 7729956588745618283, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Name
       value: Ball (6)
@@ -2477,7 +2489,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8936562399356644583, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
-      value: 1024
+      value: 3895
       objectReference: {fileID: 0}
     - target: {fileID: 9038219791808813725, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Layer
@@ -2959,7 +2971,7 @@ MonoBehaviour:
   HUDController: {fileID: 732999252}
   optionsMenu: {fileID: 317522271}
   winScreen: {fileID: 1875800008}
-  audioController: {fileID: 1193005267}
+  audioControllerPrototype: {fileID: 5840971454911539781, guid: efa6b9b0d5031e441924f92c754b70c2, type: 3}
   music: 3
 --- !u!1001 &939978644
 PrefabInstance:
@@ -3033,6 +3045,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3637021274727838012, guid: f400c681bb825f5419813983f1041f41, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 2048
+      objectReference: {fileID: 0}
     - target: {fileID: 7729956588745618283, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Name
       value: Ball (5)
@@ -3043,7 +3059,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8936562399356644583, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
-      value: 2048
+      value: 3895
       objectReference: {fileID: 0}
     - target: {fileID: 9038219791808813725, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Layer
@@ -3296,6 +3312,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.7882353
       objectReference: {fileID: 0}
+    - target: {fileID: 3637021274727838012, guid: f400c681bb825f5419813983f1041f41, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 1024
+      objectReference: {fileID: 0}
     - target: {fileID: 7729956588745618283, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Name
       value: Ball (8)
@@ -3306,7 +3326,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8936562399356644583, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
-      value: 1024
+      value: 3895
       objectReference: {fileID: 0}
     - target: {fileID: 9038219791808813725, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Layer
@@ -3459,17 +3479,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1121932715}
   m_CullTransparentMesh: 1
---- !u!114 &1193005267 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3350055663100460712, guid: efa6b9b0d5031e441924f92c754b70c2, type: 3}
-  m_PrefabInstance: {fileID: 5331375456313262963}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d838e28786dd9944ca36af02b961fb2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AudioController
 --- !u!1 &1217718391
 GameObject:
   m_ObjectHideFlags: 0
@@ -3797,6 +3806,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3637021274727838012, guid: f400c681bb825f5419813983f1041f41, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
     - target: {fileID: 7729956588745618283, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Name
       value: Ball (1)
@@ -3807,7 +3820,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8936562399356644583, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
-      value: 512
+      value: 3895
       objectReference: {fileID: 0}
     - target: {fileID: 9038219791808813725, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Layer
@@ -4032,6 +4045,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.7882353
       objectReference: {fileID: 0}
+    - target: {fileID: 3637021274727838012, guid: f400c681bb825f5419813983f1041f41, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 1024
+      objectReference: {fileID: 0}
     - target: {fileID: 7729956588745618283, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Name
       value: Ball (7)
@@ -4042,7 +4059,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8936562399356644583, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
-      value: 1024
+      value: 3895
       objectReference: {fileID: 0}
     - target: {fileID: 9038219791808813725, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Layer
@@ -4085,8 +4102,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.0136, y: 0.1933, z: 0}
-  m_LocalScale: {x: 1.6469929, y: 1.884183, z: 1.6647}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.8984376, y: 1.8984376, z: 1.8984376}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1217718393}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4139,7 +4156,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -5
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: cb6bc348d9abd4c4a93e22119ba5bf8f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 36c515148b8d01d43a572545af4884a6, type: 3}
   m_Color: {r: 0.78113204, g: 0.78113204, b: 0.78113204, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4221,6 +4238,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3637021274727838012, guid: f400c681bb825f5419813983f1041f41, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 2048
+      objectReference: {fileID: 0}
     - target: {fileID: 7729956588745618283, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Name
       value: Ball (4)
@@ -4231,7 +4252,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8936562399356644583, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
-      value: 2048
+      value: 3895
       objectReference: {fileID: 0}
     - target: {fileID: 9038219791808813725, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Layer
@@ -4619,6 +4640,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3637021274727838012, guid: f400c681bb825f5419813983f1041f41, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
     - target: {fileID: 7729956588745618283, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Name
       value: Ball
@@ -4629,7 +4654,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8936562399356644583, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
-      value: 512
+      value: 3895
       objectReference: {fileID: 0}
     - target: {fileID: 9038219791808813725, guid: f400c681bb825f5419813983f1041f41, type: 3}
       propertyPath: m_Layer
@@ -5603,63 +5628,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 708dd11ca7b3f4743b165446849915f8, type: 3}
---- !u!1001 &5331375456313262963
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5092682607892448804, guid: efa6b9b0d5031e441924f92c754b70c2, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.29598
-      objectReference: {fileID: 0}
-    - target: {fileID: 5092682607892448804, guid: efa6b9b0d5031e441924f92c754b70c2, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.57394
-      objectReference: {fileID: 0}
-    - target: {fileID: 5092682607892448804, guid: efa6b9b0d5031e441924f92c754b70c2, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5092682607892448804, guid: efa6b9b0d5031e441924f92c754b70c2, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5092682607892448804, guid: efa6b9b0d5031e441924f92c754b70c2, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5092682607892448804, guid: efa6b9b0d5031e441924f92c754b70c2, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5092682607892448804, guid: efa6b9b0d5031e441924f92c754b70c2, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5092682607892448804, guid: efa6b9b0d5031e441924f92c754b70c2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5092682607892448804, guid: efa6b9b0d5031e441924f92c754b70c2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5092682607892448804, guid: efa6b9b0d5031e441924f92c754b70c2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5840971454911539781, guid: efa6b9b0d5031e441924f92c754b70c2, type: 3}
-      propertyPath: m_Name
-      value: AudioController
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: efa6b9b0d5031e441924f92c754b70c2, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -5672,4 +5640,3 @@ SceneRoots:
   - {fileID: 1312250173}
   - {fileID: 502226156}
   - {fileID: 912872154}
-  - {fileID: 5331375456313262963}
