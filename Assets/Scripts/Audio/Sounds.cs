@@ -4,6 +4,7 @@ public enum SFX
     SCORE_LOST,
     BUBBLES,
     SPLASH,
+    MENU_TICK,
 }
 
 public enum Music
