@@ -9,5 +9,7 @@ public enum SFX
 public enum Music
 {
     RING_LEVEL,
-    TITLE_SCREEN
+    TITLE_SCREEN,
+    BASKET_LEVEL,
+    TUBE_LEVEL,
 }

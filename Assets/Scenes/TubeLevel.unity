@@ -2960,6 +2960,7 @@ MonoBehaviour:
   optionsMenu: {fileID: 317522271}
   winScreen: {fileID: 1875800008}
   audioController: {fileID: 1193005267}
+  music: 3
 --- !u!1001 &939978644
 PrefabInstance:
   m_ObjectHideFlags: 0

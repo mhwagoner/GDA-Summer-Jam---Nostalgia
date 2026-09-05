@@ -188,6 +188,8 @@ MonoBehaviour:
   musicClips:
   - {fileID: 8300000, guid: bcf64ff3451ac184d867d680f8c2eec9, type: 3}
   - {fileID: 8300000, guid: d2bfaaab0e31d4641b6a84b54315e1a4, type: 3}
+  - {fileID: 8300000, guid: 31246465af91be94385e0c45644e1417, type: 3}
+  - {fileID: 8300000, guid: 11b25ba79f8d60d48bd2f8bdc5f0bda6, type: 3}
   musicVolume: 0.35
 --- !u!82 &8093383538565582138
 AudioSource:

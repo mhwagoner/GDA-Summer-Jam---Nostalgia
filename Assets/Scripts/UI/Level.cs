@@ -18,6 +18,8 @@ public class Level : MonoBehaviour
 
     public AudioController audioController;
 
+    public Music music;
+
     private void OnEnable()
     {
         //
@@ -42,7 +44,7 @@ public class Level : MonoBehaviour
         levelActive = true;
         Time.timeScale = 1f;
         isPaused = false;
-        if (audioController != null) audioController.PlayMusic(Music.RING_LEVEL);
+        if (audioController != null) audioController.PlayMusic(music);
     }
 
     public void EndLevel()
