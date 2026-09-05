@@ -2690,6 +2690,7 @@ MonoBehaviour:
   HUDController: {fileID: 732999252}
   optionsMenu: {fileID: 317522271}
   winScreen: {fileID: 1875800008}
+  audioController: {fileID: 0}
   audioControllerPrototype: {fileID: 5840971454911539781, guid: efa6b9b0d5031e441924f92c754b70c2, type: 3}
   music: 0
 --- !u!1001 &912883422

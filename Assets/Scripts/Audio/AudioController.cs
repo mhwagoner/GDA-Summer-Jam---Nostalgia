@@ -27,7 +27,6 @@ public class AudioController : MonoBehaviour
     {
         if (effect >= 0 && (int)effect < sfxClips.Length)
         {
-            if (sfxSource == null) return;
             sfxSource.PlayOneShot(sfxClips[(int)effect], sfxVolume);
         }
     }

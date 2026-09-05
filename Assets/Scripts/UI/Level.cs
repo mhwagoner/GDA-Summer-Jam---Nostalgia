@@ -42,8 +42,14 @@ public class Level : MonoBehaviour
         EventBus.Instance.OnMultEarned += ChangeMult;
         EventBus.Instance.OnTubeFilled += ApplyTubeBonus;
         StartLevel();
-        EventBus.Instance.OnRainbowTimeActivated += ActivateRainbowTime;
         EventBus.Instance.StartLevel();
+    }
+
+    private void OnDestroy()
+    {
+        EventBus.Instance.OnScoreEarned -= ChangeScore;
+        EventBus.Instance.OnMultEarned -= ChangeMult;
+        EventBus.Instance.OnTubeFilled -= ApplyTubeBonus;
     }
 
     public void StartLevel()
@@ -51,6 +57,7 @@ public class Level : MonoBehaviour
         levelActive = true;
         Time.timeScale = 1f;
         isPaused = false;
+        isRainbowTime = false;
         if (audioController != null) audioController.PlayMusic(music);
     }
 
@@ -71,9 +78,9 @@ public class Level : MonoBehaviour
         {
             EndLevel();
         }
-        else if (levelTime <= timeToActivateRainbow)
+        else if (levelTime <= timeToActivateRainbow && !isRainbowTime)
         {
-            EventBus.Instance.ActivateRainbowTime();
+            ActivateRainbowTime();
         }
 
         levelTime -= Time.deltaTime;
@@ -87,6 +94,7 @@ public class Level : MonoBehaviour
     private void ActivateRainbowTime()
     {
         isRainbowTime = true;
+        EventBus.Instance.ActivateRainbowTime();
     }
 
     private void ApplyTubeBonus(int bonusPoints, float bonusMult)
@@ -101,14 +109,13 @@ public class Level : MonoBehaviour
 
         if (scoreToAdd > 0) {
             audioController.PlaySFX(SFX.SCORE_EARNED);
+            ChangeMult(multPerScore);
         }
         if (scoreToAdd < 0) {
             audioController.PlaySFX(SFX.SCORE_LOST);
         }
         
         score += scoreToAdd;
-
-        ChangeMult(multPerScore);
     }
 
     private void ChangeMult(float multToAdd)
