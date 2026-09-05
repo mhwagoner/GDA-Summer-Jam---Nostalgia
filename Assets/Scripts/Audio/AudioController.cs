@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -28,6 +27,7 @@ public class AudioController : MonoBehaviour
     {
         if (effect >= 0 && (int)effect < sfxClips.Length)
         {
+            if (sfxSource == null) return;
             sfxSource.PlayOneShot(sfxClips[(int)effect], sfxVolume);
         }
     }
@@ -40,7 +40,6 @@ public class AudioController : MonoBehaviour
             source.volume = sfxVolume;
             source.Play();
         }
-
     }
 
     public void PlayMusic(Music song)
