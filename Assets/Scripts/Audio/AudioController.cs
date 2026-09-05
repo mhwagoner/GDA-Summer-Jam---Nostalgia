@@ -31,6 +31,14 @@ public class AudioController : MonoBehaviour
         }
     }
 
+    public void PlaySFX(SFX effect, float volumeMod)
+    {
+        if (effect >= 0 && (int)effect < sfxClips.Length)
+        {
+            sfxSource.PlayOneShot(sfxClips[(int)effect], sfxVolume * volumeMod);
+        }
+    }
+
     public void PlaySFX(SFX effect, AudioSource source)
     {
         if (effect >= 0 && (int)effect < sfxClips.Length)
