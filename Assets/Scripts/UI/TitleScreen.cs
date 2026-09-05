@@ -8,6 +8,8 @@ public class TitleScreen : MonoBehaviour
     {
         if (audioController == null) Debug.Log("TitleScreen not given an AudioController");
         else audioController.PlayMusic(Music.TITLE_SCREEN);
+
+        Debug.Log(Time.timeScale);
     }
 
     // Update is called once per frame
