@@ -74,7 +74,7 @@ public class Level : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(levelTime <= 0f)
+        if(levelTime <= 0f && levelActive)
         {
             EndLevel();
         }
@@ -138,7 +138,7 @@ public class Level : MonoBehaviour
         HUDController.multLabel.text = string.Format("{0:0.0#}", mult);
     }
 
-    public void OnPause()
+    public void TogglePauseMenu()
     {
         isPaused = !isPaused;
         Time.timeScale = isPaused ? 0f : 1f;
@@ -150,6 +150,12 @@ public class Level : MonoBehaviour
         {
             optionsMenu.ToggleOpen();
         }
+    }
+
+    public void PauseTime(bool toPause)
+    {
+        Time.timeScale = toPause ? 0f : 1f;
+        Debug.Log("new timescale = " + Time.timeScale);
     }
 
     public void OnOpenStats()
