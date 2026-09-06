@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class AudioController : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class AudioController : MonoBehaviour
     [SerializeField] private AudioSource musicSource;
     [SerializeField] private AudioClip[] musicClips;
     [SerializeField] private float musicVolume;
+
+    [SerializeField] private Slider volumeSlider;
 
 
     void Start()
@@ -57,5 +60,10 @@ public class AudioController : MonoBehaviour
             musicSource.volume = musicVolume;
             musicSource.Play();
         }
+    }
+
+    public void ChangeVolume()
+    {
+        AudioListener.volume = volumeSlider.value;
     }
 }
