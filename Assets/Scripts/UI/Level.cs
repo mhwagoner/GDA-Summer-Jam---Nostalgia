@@ -16,7 +16,7 @@ public class Level : MonoBehaviour
     public HUDController optionsMenu;
     public HUDController winScreen;
 
-    private AudioController audioController;
+    public AudioController audioController;
     public GameObject audioControllerPrototype;
 
     public Music music;
@@ -39,9 +39,6 @@ public class Level : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        GameObject audioControllerObj = Instantiate(audioControllerPrototype);
-        if (!audioControllerObj.TryGetComponent(out audioController)) Debug.Log("AudioController prototype does not have an AudioController component");
-
         _scoreCounter = new ScoreCounter(consecutiveScoreTime);
 
         EventBus.Instance.OnScoreEarned += ChangeScore;
