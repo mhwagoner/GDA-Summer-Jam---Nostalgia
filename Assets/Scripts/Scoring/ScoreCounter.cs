@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 public class ScoreCounter
 {
     private float _consecutiveScoreTime = float.MaxValue;
@@ -7,6 +8,11 @@ public class ScoreCounter
 
     public Animator dolphinAnimator;
     public Animator fingerAnimator;
+    public Image dolphinText;
+
+    public Sprite wowSprite;
+    public Sprite goodJobSprite;
+    public Sprite holyFuckSprite;
 
     public ScoreCounter(float consecutiveScoreTime)
     {
@@ -47,6 +53,7 @@ public class ScoreCounter
             Game.Instance.audioController.PlaySFX(SFX.UH_UH_UH);
             dolphinAnimator.SetTrigger("talk");
             fingerAnimator.SetTrigger("finger_wag");
+            dolphinText.color = Color.clear;
         }
         else if (_consecutiveScores > 1)
         {
@@ -56,14 +63,20 @@ public class ScoreCounter
                 case 2:
                     Game.Instance.audioController.PlaySFX(SFX.HOLY_FUCK);
                     dolphinAnimator.SetTrigger("talk");
+                    dolphinText.sprite = holyFuckSprite;
+                    dolphinText.color = Color.white;
                     break;
                 case 1:
                     Game.Instance.audioController.PlaySFX(SFX.WOW);
                     dolphinAnimator.SetTrigger("talk");
+                    dolphinText.sprite = wowSprite;
+                    dolphinText.color = Color.white;
                     break;
                 case 0:
                     Game.Instance.audioController.PlaySFX(SFX.GOOD_JOB);
                     dolphinAnimator.SetTrigger("talk");
+                    dolphinText.sprite = goodJobSprite;
+                    dolphinText.color = Color.white;
                     break;
             }
         }

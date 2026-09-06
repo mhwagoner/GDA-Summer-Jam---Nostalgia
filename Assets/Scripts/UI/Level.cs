@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Level : MonoBehaviour
 {
@@ -19,6 +20,11 @@ public class Level : MonoBehaviour
     //animators
     [SerializeField] private Animator dolphinAnimator;
     [SerializeField] private Animator fingerAnimator;
+    [SerializeField] private Image dolphinText;
+
+    public Sprite wowSprite;
+    public Sprite goodJobSprite;
+    public Sprite holyFuckSprite;
 
     public AudioController audioController;
 
@@ -46,6 +52,10 @@ public class Level : MonoBehaviour
 
         _scoreCounter.dolphinAnimator = dolphinAnimator;
         _scoreCounter.fingerAnimator = fingerAnimator;
+        _scoreCounter.dolphinText = dolphinText;
+        _scoreCounter.goodJobSprite = goodJobSprite;
+        _scoreCounter.wowSprite = wowSprite;
+        _scoreCounter.holyFuckSprite = holyFuckSprite;
 
         EventBus.Instance.OnScoreEarned += ChangeScore;
         EventBus.Instance.OnTubeFilled += ApplyTubeBonus;
