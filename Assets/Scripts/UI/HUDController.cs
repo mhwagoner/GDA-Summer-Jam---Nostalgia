@@ -9,6 +9,7 @@ public class HUDController : MonoBehaviour
     public TextMeshProUGUI timeLabel;
     public TextMeshProUGUI scoreLabel;
     public TextMeshProUGUI multLabel;
+    public Animator clockSpriteAnimator;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

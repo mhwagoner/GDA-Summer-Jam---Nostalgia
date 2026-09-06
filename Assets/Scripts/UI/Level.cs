@@ -38,7 +38,6 @@ public class Level : MonoBehaviour
         if (!audioControllerObj.TryGetComponent(out audioController)) Debug.Log("AudioController prototype does not have an AudioController component");
 
         EventBus.Instance.OnScoreEarned += ChangeScore;
-        //EventBus.Instance.OnMultEarned += ChangeMult;
         EventBus.Instance.OnTubeFilled += ApplyTubeBonus;
         StartLevel();
         EventBus.Instance.StartLevel();
@@ -64,6 +63,7 @@ public class Level : MonoBehaviour
     {
         levelActive = false;
         Time.timeScale = 0f;
+        HUDController.clockSpriteAnimator.SetBool("timeLow", false);
 
         float finalScore = mult * score;
         winScreen.scoreLabel.text = $"Final Score: {(int)finalScore}";
@@ -129,13 +129,18 @@ public class Level : MonoBehaviour
     private void UpdateHUD()
     {
         //timer
-        HUDController.timeLabel.text = $"{(int)levelTime}";
+        HUDController.timeLabel.text = $"{Mathf.CeilToInt(levelTime)}";
 
         //score
         HUDController.scoreLabel.text = $"{score}";
 
         //mult
         HUDController.multLabel.text = string.Format("{0:0.0#}", mult);
+
+        if (levelTime <= 10.0f)
+        {
+            HUDController.clockSpriteAnimator.SetBool("timeLow", true);
+        }
     }
 
     public void TogglePauseMenu()

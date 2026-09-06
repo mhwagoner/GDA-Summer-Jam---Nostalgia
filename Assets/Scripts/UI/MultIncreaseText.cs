@@ -2,6 +2,7 @@ using TMPro;
 using UnityEngine;
 
 [RequireComponent(typeof(TextMeshProUGUI))]
+[RequireComponent(typeof(Animator))]
 public class MultIncreaseText : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
