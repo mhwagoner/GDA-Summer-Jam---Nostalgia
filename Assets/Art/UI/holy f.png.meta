@@ -58,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -67,7 +67,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -96,7 +96,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -137,8 +137,8 @@ TextureImporter:
       name: holy f_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 87
+        x: 17
+        y: 99
         width: 40
         height: 62
       alignment: 0
@@ -159,8 +159,8 @@ TextureImporter:
       name: holy f_1
       rect:
         serializedVersion: 2
-        x: 62
-        y: 91
+        x: 60
+        y: 103
         width: 32
         height: 33
       alignment: 0
@@ -181,8 +181,8 @@ TextureImporter:
       name: holy f_2
       rect:
         serializedVersion: 2
-        x: 97
-        y: 90
+        x: 95
+        y: 102
         width: 16
         height: 60
       alignment: 0
@@ -203,8 +203,8 @@ TextureImporter:
       name: holy f_3
       rect:
         serializedVersion: 2
-        x: 112
-        y: 59
+        x: 110
+        y: 71
         width: 43
         height: 67
       alignment: 0
@@ -225,8 +225,8 @@ TextureImporter:
       name: holy f_4
       rect:
         serializedVersion: 2
-        x: 32
-        y: 17
+        x: 30
+        y: 29
         width: 39
         height: 59
       alignment: 0
@@ -247,8 +247,8 @@ TextureImporter:
       name: holy f_5
       rect:
         serializedVersion: 2
-        x: 75
-        y: 18
+        x: 73
+        y: 30
         width: 34
         height: 34
       alignment: 0
@@ -269,8 +269,8 @@ TextureImporter:
       name: holy f_6
       rect:
         serializedVersion: 2
-        x: 114
-        y: 18
+        x: 112
+        y: 30
         width: 34
         height: 34
       alignment: 0
@@ -291,8 +291,8 @@ TextureImporter:
       name: holy f_7
       rect:
         serializedVersion: 2
-        x: 152
-        y: 19
+        x: 150
+        y: 31
         width: 39
         height: 51
       alignment: 0
@@ -313,7 +313,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
