@@ -11766,7 +11766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 136c113e75feb5e4c95c2a3f0ad94c6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScoreManager
-  levelTime: 100
+  levelTime: 30
   score: 0
   mult: 1
   isPaused: 0
