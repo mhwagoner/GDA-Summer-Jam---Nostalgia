@@ -9,6 +9,7 @@ public enum SFX
     GOOD_JOB,
     WOW,
     HOLY_FUCK,
+    UH_UH_UH,
 }
 
 public enum Music

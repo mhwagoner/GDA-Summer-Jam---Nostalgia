@@ -58,6 +58,7 @@ public class ScoreCounter
                 break;
             case -1:
                 // TODO: uh uh uh!
+                Game.Instance.audioController.PlaySFX(SFX.UH_UH_UH);
                 dolphinAnimator.SetTrigger("talk");
                 fingerAnimator.SetTrigger("finger_wag");
                 break;
