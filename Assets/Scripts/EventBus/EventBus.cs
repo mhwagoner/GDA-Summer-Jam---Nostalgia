@@ -39,7 +39,6 @@ public class EventBus
         OnLevelStart?.Invoke();
     }
 
-    // note: UNUSED
     public event Action<float> OnMultEarned;
 
     public void MultEarned(float mult)

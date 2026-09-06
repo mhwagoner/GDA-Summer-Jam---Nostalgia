@@ -43,7 +43,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: d2bfaaab0e31d4641b6a84b54315e1a4, type: 3}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.35
   m_Pitch: 1
@@ -182,6 +182,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: fd9d96690c042ec4b8d88a727b97ec03, type: 3}
   - {fileID: 8300000, guid: 2f40509c30f3b7245bfcf73d578f8032, type: 3}
   - {fileID: 8300000, guid: 44897f9484632bf468d852079ad9f30a, type: 3}
+  - {fileID: 8300000, guid: 95d582c0b4fa3e24eb10646bf3914c66, type: 3}
+  - {fileID: 8300000, guid: fbadd746ec433b84482eda3056d0fe4c, type: 3}
+  - {fileID: 8300000, guid: 7372f95cf3f27d243ab724c67eb238bb, type: 3}
+  - {fileID: 8300000, guid: d8b5df49a37497a469ebcfb9f7f4afb4, type: 3}
+  - {fileID: 8300000, guid: 715a48d772902d84eba61051af3df4d4, type: 3}
   sfxVolume: 0.75
   musicSource: {fileID: 8109131174262414169}
   musicClips:
@@ -190,7 +195,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 31246465af91be94385e0c45644e1417, type: 3}
   - {fileID: 8300000, guid: 11b25ba79f8d60d48bd2f8bdc5f0bda6, type: 3}
   - {fileID: 8300000, guid: af80ae0119589044997f661d497437bc, type: 3}
-  musicVolume: 0.35
+  musicVolume: 0.25
 --- !u!1 &6863738675027367563
 GameObject:
   m_ObjectHideFlags: 0
