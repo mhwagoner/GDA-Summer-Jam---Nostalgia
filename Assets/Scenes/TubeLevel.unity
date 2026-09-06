@@ -2391,6 +2391,7 @@ MonoBehaviour:
   winScreen: {fileID: 1875800008}
   audioControllerPrototype: {fileID: 5840971454911539781, guid: efa6b9b0d5031e441924f92c754b70c2, type: 3}
   music: 3
+  consecutiveScoreTime: 1.5
 --- !u!1001 &929313881
 PrefabInstance:
   m_ObjectHideFlags: 0
