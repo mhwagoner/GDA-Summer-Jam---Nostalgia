@@ -42,26 +42,30 @@ public class ScoreCounter
 
     public void ShowFun()
     {
-        switch(_consecutiveScores)
+        if (_consecutiveScores < 0)
         {
-            case 4:
-                Game.Instance.audioController.PlaySFX(SFX.HOLY_FUCK);
-                dolphinAnimator.SetTrigger("talk");
-                break;
-            case 3:
-                Game.Instance.audioController.PlaySFX(SFX.WOW);
-                dolphinAnimator.SetTrigger("talk");
-                break;
-            case 2:
-                Game.Instance.audioController.PlaySFX(SFX.GOOD_JOB);
-                dolphinAnimator.SetTrigger("talk");
-                break;
-            case -1:
-                // TODO: uh uh uh!
-                Game.Instance.audioController.PlaySFX(SFX.UH_UH_UH);
-                dolphinAnimator.SetTrigger("talk");
-                fingerAnimator.SetTrigger("finger_wag");
-                break;
+            Game.Instance.audioController.PlaySFX(SFX.UH_UH_UH);
+            dolphinAnimator.SetTrigger("talk");
+            fingerAnimator.SetTrigger("finger_wag");
+        }
+        else if (_consecutiveScores > 1)
+        {
+            int random = Random.Range(0, 3);
+            switch(random)
+            {
+                case 2:
+                    Game.Instance.audioController.PlaySFX(SFX.HOLY_FUCK);
+                    dolphinAnimator.SetTrigger("talk");
+                    break;
+                case 1:
+                    Game.Instance.audioController.PlaySFX(SFX.WOW);
+                    dolphinAnimator.SetTrigger("talk");
+                    break;
+                case 0:
+                    Game.Instance.audioController.PlaySFX(SFX.GOOD_JOB);
+                    dolphinAnimator.SetTrigger("talk");
+                    break;
+            }
         }
     }
 }
