@@ -1,7 +1,10 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SettingsManager : MonoBehaviour
 {
+    [SerializeField] Slider volumeSlider;
+
     public void ToggleFullscreen()
     {
         Screen.fullScreen = !Screen.fullScreen;
@@ -17,5 +20,9 @@ public class SettingsManager : MonoBehaviour
         }
 
         isMuted = !isMuted;*/
+    }
+
+    public void ChangeVolume(){
+        AudioListener.volume = volumeSlider.value;
     }
 }
