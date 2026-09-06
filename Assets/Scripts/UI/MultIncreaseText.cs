@@ -13,7 +13,7 @@ public class MultIncreaseText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnDestroy()
@@ -24,5 +24,6 @@ public class MultIncreaseText : MonoBehaviour
     private void ChangeText(float multIncrease)
     {
         GetComponent<TextMeshProUGUI>().text = string.Format("+{0:0.0#}", multIncrease);
+        GetComponent<Animator>().Play("multAddedFade");
     }
 }
