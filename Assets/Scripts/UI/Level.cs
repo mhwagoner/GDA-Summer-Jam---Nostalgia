@@ -21,6 +21,8 @@ public class Level : MonoBehaviour
 
     public Music music;
 
+    private float _secondMilestone = 5.0f;
+
     private void OnEnable()
     {
         //
@@ -88,6 +90,12 @@ public class Level : MonoBehaviour
         if(HUDController != null)
         {
             UpdateHUD();
+        }
+
+        if (levelTime <= _secondMilestone)
+        {
+            audioController.PlaySFX(SFX.CLOCK_TICK, 1.5f);
+            _secondMilestone -= 1.0f;
         }
     }
 

@@ -5,6 +5,7 @@ public enum SFX
     BUBBLES,
     SPLASH,
     MENU_TICK,
+    CLOCK_TICK,
 }
 
 public enum Music
