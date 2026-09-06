@@ -361,7 +361,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4403802899869091856}
   - component: {fileID: 4995701304266282067}
-  - component: {fileID: 4852546915793078473}
   m_Layer: 0
   m_Name: TubeBody
   m_TagString: Untagged
@@ -443,22 +442,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &4852546915793078473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5176394640994010546}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29471fee8f8d59e4ead2688c7c8492cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GlowingSprite
-  glowSprite: {fileID: 21300000, guid: b5021ed0c08fa864196010a996f0f326, type: 3}
-  redGlowSprite: {fileID: 21300000, guid: da0c3614a0dd47b4e8856efb342e3004, type: 3}
-  scoreEntryCollider: {fileID: 0}
-  scoreExitCollider: {fileID: 3534598368872117901}
 --- !u!1 &5846919740689553325
 GameObject:
   m_ObjectHideFlags: 0
