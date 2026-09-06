@@ -21,6 +21,8 @@ public class Level : MonoBehaviour
 
     public Music music;
 
+    private float _secondMilestone = 5.0f;
+
     public float consecutiveScoreTime;
     private ScoreCounter _scoreCounter;
 
@@ -43,7 +45,6 @@ public class Level : MonoBehaviour
         _scoreCounter = new ScoreCounter(consecutiveScoreTime);
 
         EventBus.Instance.OnScoreEarned += ChangeScore;
-        EventBus.Instance.OnMultEarned += ChangeMult;
         EventBus.Instance.OnTubeFilled += ApplyTubeBonus;
         StartLevel();
         EventBus.Instance.StartLevel();
@@ -69,6 +70,7 @@ public class Level : MonoBehaviour
     {
         levelActive = false;
         Time.timeScale = 0f;
+        HUDController.clockSpriteAnimator.SetBool("timeLow", false);
 
         float finalScore = mult * score;
         winScreen.scoreLabel.text = $"Final Score: {(int)finalScore}";
@@ -96,6 +98,12 @@ public class Level : MonoBehaviour
         }
 
         _scoreCounter.Update(Time.deltaTime);
+
+        if (levelTime <= _secondMilestone)
+        {
+            audioController.PlaySFX(SFX.CLOCK_TICK, 1.5f);
+            _secondMilestone -= 1.0f;
+        }
     }
 
     private void ActivateRainbowTime()
@@ -130,21 +138,26 @@ public class Level : MonoBehaviour
 
     private void ChangeMult(float multToAdd)
     {
-
-        if(isRainbowTime){mult += multToAdd * 3;}
-        else{mult += multToAdd;}
+        float multAdd = isRainbowTime ? multToAdd * 3 : multToAdd;
+        mult += multAdd;
+        EventBus.Instance.MultEarned(multAdd);
     }
 
     private void UpdateHUD()
     {
         //timer
-        HUDController.timeLabel.text = $"{(int)levelTime}";
+        HUDController.timeLabel.text = $"{Mathf.CeilToInt(levelTime)}";
 
         //score
         HUDController.scoreLabel.text = $"{score}";
 
         //mult
         HUDController.multLabel.text = string.Format("{0:0.0#}", mult);
+
+        if (levelTime <= 10.0f)
+        {
+            HUDController.clockSpriteAnimator.SetBool("timeLow", true);
+        }
     }
 
     public void TogglePauseMenu()
