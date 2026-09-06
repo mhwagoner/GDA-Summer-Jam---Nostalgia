@@ -16,8 +16,11 @@ public class Level : MonoBehaviour
     public HUDController optionsMenu;
     public HUDController winScreen;
 
+    //animators
+    [SerializeField] private Animator dolphinAnimator;
+    [SerializeField] private Animator fingerAnimator;
+
     public AudioController audioController;
-    public GameObject audioControllerPrototype;
 
     public Music music;
 
@@ -40,6 +43,9 @@ public class Level : MonoBehaviour
     void Start()
     {
         _scoreCounter = new ScoreCounter(consecutiveScoreTime);
+
+        _scoreCounter.dolphinAnimator = dolphinAnimator;
+        _scoreCounter.fingerAnimator = fingerAnimator;
 
         EventBus.Instance.OnScoreEarned += ChangeScore;
         EventBus.Instance.OnTubeFilled += ApplyTubeBonus;
