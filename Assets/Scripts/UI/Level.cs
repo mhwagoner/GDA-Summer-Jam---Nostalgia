@@ -16,8 +16,11 @@ public class Level : MonoBehaviour
     public HUDController optionsMenu;
     public HUDController winScreen;
 
-    private AudioController audioController;
-    public GameObject audioControllerPrototype;
+    //animators
+    [SerializeField] private Animator dolphinAnimator;
+    [SerializeField] private Animator fingerAnimator;
+
+    public AudioController audioController;
 
     public Music music;
 
@@ -39,10 +42,10 @@ public class Level : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        GameObject audioControllerObj = Instantiate(audioControllerPrototype);
-        if (!audioControllerObj.TryGetComponent(out audioController)) Debug.Log("AudioController prototype does not have an AudioController component");
-
         _scoreCounter = new ScoreCounter(consecutiveScoreTime);
+
+        _scoreCounter.dolphinAnimator = dolphinAnimator;
+        _scoreCounter.fingerAnimator = fingerAnimator;
 
         EventBus.Instance.OnScoreEarned += ChangeScore;
         EventBus.Instance.OnTubeFilled += ApplyTubeBonus;

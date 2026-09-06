@@ -5,6 +5,9 @@ public class ScoreCounter
     private float _timeSinceLastScore = 0.0f;
     private int _consecutiveScores = 0;
 
+    public Animator dolphinAnimator;
+    public Animator fingerAnimator;
+
     public ScoreCounter(float consecutiveScoreTime)
     {
         _consecutiveScoreTime = consecutiveScoreTime;
@@ -43,15 +46,20 @@ public class ScoreCounter
         {
             case 4:
                 Game.Instance.audioController.PlaySFX(SFX.HOLY_FUCK);
+                dolphinAnimator.SetTrigger("talk");
                 break;
             case 3:
                 Game.Instance.audioController.PlaySFX(SFX.WOW);
+                dolphinAnimator.SetTrigger("talk");
                 break;
             case 2:
                 Game.Instance.audioController.PlaySFX(SFX.GOOD_JOB);
+                dolphinAnimator.SetTrigger("talk");
                 break;
             case -1:
                 // TODO: uh uh uh!
+                dolphinAnimator.SetTrigger("talk");
+                fingerAnimator.SetTrigger("finger_wag");
                 break;
         }
     }
