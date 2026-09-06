@@ -197,6 +197,7 @@ GameObject:
   - component: {fileID: 68904529855578609}
   - component: {fileID: 5108195939762183687}
   - component: {fileID: 1694936797173783347}
+  - component: {fileID: 2957430015609148458}
   m_Layer: 0
   m_Name: Pole
   m_TagString: Untagged
@@ -294,6 +295,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Goal
   points: 5
+--- !u!114 &2957430015609148458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3710848271819665591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29471fee8f8d59e4ead2688c7c8492cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  glowSprite: {fileID: 21300000, guid: 34d196a143c3a5841ba14ab7b33f878a, type: 3}
+  redGlowSprite: {fileID: 21300000, guid: c724aac04209bd14c8dceeab9c1c5da9, type: 3}
+  scoreEntryCollider: {fileID: 1693383083426926291}
+  scoreExitCollider: {fileID: 4917715764968178447}
 --- !u!1 &3904100696663114587
 GameObject:
   m_ObjectHideFlags: 0

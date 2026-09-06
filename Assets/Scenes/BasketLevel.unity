@@ -4023,6 +4023,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 53076218}
     m_Modifications:
+    - target: {fileID: 455075837583466935, guid: 713275e24f006f44e84716e852ca4a2c, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 455075837583466935, guid: 713275e24f006f44e84716e852ca4a2c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 455075837583466935, guid: 713275e24f006f44e84716e852ca4a2c, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1148006218554609563, guid: 713275e24f006f44e84716e852ca4a2c, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -4030,6 +4042,10 @@ PrefabInstance:
     - target: {fileID: 2523124641554390289, guid: 713275e24f006f44e84716e852ca4a2c, type: 3}
       propertyPath: m_Name
       value: OptionsMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 2523124641554390289, guid: 713275e24f006f44e84716e852ca4a2c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3267876145960518776, guid: 713275e24f006f44e84716e852ca4a2c, type: 3}
       propertyPath: m_Pivot.x
@@ -4109,6 +4125,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3267876145960518776, guid: 713275e24f006f44e84716e852ca4a2c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4155806339436043259, guid: 713275e24f006f44e84716e852ca4a2c, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4155806339436043259, guid: 713275e24f006f44e84716e852ca4a2c, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7371817394925879069, guid: 713275e24f006f44e84716e852ca4a2c, type: 3}

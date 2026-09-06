@@ -187,6 +187,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7372f95cf3f27d243ab724c67eb238bb, type: 3}
   - {fileID: 8300000, guid: d8b5df49a37497a469ebcfb9f7f4afb4, type: 3}
   - {fileID: 8300000, guid: 715a48d772902d84eba61051af3df4d4, type: 3}
+  - {fileID: 8300000, guid: 10fcfe5ef6c22b743a76bb9f138990e6, type: 3}
   sfxVolume: 0.75
   musicSource: {fileID: 8109131174262414169}
   musicClips:
@@ -196,6 +197,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 11b25ba79f8d60d48bd2f8bdc5f0bda6, type: 3}
   - {fileID: 8300000, guid: af80ae0119589044997f661d497437bc, type: 3}
   musicVolume: 0.25
+  volumeSlider: {fileID: 0}
 --- !u!1 &6863738675027367563
 GameObject:
   m_ObjectHideFlags: 0

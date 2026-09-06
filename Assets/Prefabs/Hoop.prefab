@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4547743723862078989}
   - component: {fileID: 1762941518445804761}
+  - component: {fileID: 8021837697607491169}
   m_Layer: 0
   m_Name: Back
   m_TagString: Untagged
@@ -91,6 +92,22 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &8021837697607491169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345887418483476703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29471fee8f8d59e4ead2688c7c8492cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlowingSprite
+  glowSprite: {fileID: 21300000, guid: 0ff7c6e44030e8d449dac31184c186a2, type: 3}
+  redGlowSprite: {fileID: 21300000, guid: f1b131928b927824ebd98ef6e4b00a8e, type: 3}
+  scoreEntryCollider: {fileID: 1189030484085921074}
+  scoreExitCollider: {fileID: 4596605521930598318}
 --- !u!1 &3448645264657103024
 GameObject:
   m_ObjectHideFlags: 0
@@ -101,6 +118,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1558649224242991215}
   - component: {fileID: 6018611979752450253}
+  - component: {fileID: 8498917499333164772}
   m_Layer: 0
   m_Name: Front
   m_TagString: Untagged
@@ -182,6 +200,22 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &8498917499333164772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3448645264657103024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29471fee8f8d59e4ead2688c7c8492cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlowingSprite
+  glowSprite: {fileID: 21300000, guid: 3dc462d0285094f4da30978fd3909461, type: 3}
+  redGlowSprite: {fileID: 21300000, guid: ba464135dfe5ce04bb90eea5fb722cbf, type: 3}
+  scoreEntryCollider: {fileID: 1189030484085921074}
+  scoreExitCollider: {fileID: 4596605521930598318}
 --- !u!1 &4055539727735891691
 GameObject:
   m_ObjectHideFlags: 0
