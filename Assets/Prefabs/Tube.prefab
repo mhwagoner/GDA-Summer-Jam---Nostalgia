@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7198450831651400034}
   - component: {fileID: 4473277300459792748}
+  - component: {fileID: 4359966104335052116}
   m_Layer: 0
   m_Name: RimFront
   m_TagString: Untagged
@@ -91,6 +92,22 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &4359966104335052116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173846110321559711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29471fee8f8d59e4ead2688c7c8492cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlowingSprite
+  glowSprite: {fileID: 774438760, guid: aa3428d9bf4f92243861f47f45fbc025, type: 3}
+  redGlowSprite: {fileID: -921691177609435128, guid: a5d97c726ecd0294e9511cb546dd80cc, type: 3}
+  scoreEntryCollider: {fileID: 0}
+  scoreExitCollider: {fileID: 3534598368872117901}
 --- !u!1 &760210654635587496
 GameObject:
   m_ObjectHideFlags: 0
@@ -255,6 +272,7 @@ MonoBehaviour:
   numBalls: 0
   bonusPoints: 3
   bonusMult: 0.05
+  timeToResetBalls: 3
 --- !u!1 &4838622234521766754
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,6 +361,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4403802899869091856}
   - component: {fileID: 4995701304266282067}
+  - component: {fileID: 4852546915793078473}
   m_Layer: 0
   m_Name: TubeBody
   m_TagString: Untagged
@@ -424,6 +443,22 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &4852546915793078473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5176394640994010546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29471fee8f8d59e4ead2688c7c8492cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlowingSprite
+  glowSprite: {fileID: 21300000, guid: b5021ed0c08fa864196010a996f0f326, type: 3}
+  redGlowSprite: {fileID: 21300000, guid: da0c3614a0dd47b4e8856efb342e3004, type: 3}
+  scoreEntryCollider: {fileID: 0}
+  scoreExitCollider: {fileID: 3534598368872117901}
 --- !u!1 &5846919740689553325
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,6 +469,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2543641340464697423}
   - component: {fileID: 8378822154351367937}
+  - component: {fileID: 2691023074451381455}
   m_Layer: 0
   m_Name: RimBack
   m_TagString: Untagged
@@ -515,6 +551,22 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &2691023074451381455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5846919740689553325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29471fee8f8d59e4ead2688c7c8492cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlowingSprite
+  glowSprite: {fileID: -1525923915, guid: aa3428d9bf4f92243861f47f45fbc025, type: 3}
+  redGlowSprite: {fileID: -768869590, guid: a5d97c726ecd0294e9511cb546dd80cc, type: 3}
+  scoreEntryCollider: {fileID: 0}
+  scoreExitCollider: {fileID: 3534598368872117901}
 --- !u!1 &5975092399772570583
 GameObject:
   m_ObjectHideFlags: 0

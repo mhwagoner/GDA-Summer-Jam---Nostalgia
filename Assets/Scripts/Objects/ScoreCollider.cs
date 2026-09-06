@@ -15,6 +15,7 @@ public class ScoreCollider : MonoBehaviour
     public Goal goal;
 
     public event Action<Object> OnObjectEnter;
+    public event Action<int> OnScoreEarned;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -60,6 +61,7 @@ public class ScoreCollider : MonoBehaviour
         // If both hitboxes were hit, earn points
         if (obj.hasEnteredTopScorebox && obj.hasEnteredBottomScorebox)
         {
+            OnScoreEarned?.Invoke(obj.scoreToAdd);
             obj.EarnPoints();
         }
 

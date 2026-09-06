@@ -2218,10 +2218,22 @@ PrefabInstance:
       propertyPath: points
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 2957430015609148458, guid: 3171165b39ee60e4aae983f00c37233a, type: 3}
+      propertyPath: glowSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cc3537988c9b4714cabe5438a33713c5, type: 3}
+    - target: {fileID: 2957430015609148458, guid: 3171165b39ee60e4aae983f00c37233a, type: 3}
+      propertyPath: redGlowSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 345fb6783d408214688ed5ee29a4eb2c, type: 3}
     - target: {fileID: 3710848271819665591, guid: 3171165b39ee60e4aae983f00c37233a, type: 3}
       propertyPath: m_Name
       value: Pole
       objectReference: {fileID: 0}
+    - target: {fileID: 5108195939762183687, guid: 3171165b39ee60e4aae983f00c37233a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: db78b4a5512b8734faac26ca7a26b5dd, type: 3}
     - target: {fileID: 7232486221523668645, guid: 3171165b39ee60e4aae983f00c37233a, type: 3}
       propertyPath: points
       value: 8
